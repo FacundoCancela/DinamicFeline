@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour, IMoveable
 
     private Collider2D groundCollider;
     private float cameraHalfWidth;
-   
+    public bool isFacingRight = true; // Indica si el personaje está mirando hacia la derecha.
 
     #endregion
 
@@ -77,7 +77,32 @@ public class PlayerMovement : MonoBehaviour, IMoveable
         // Restringir el movimiento en Y, teniendo en cuenta las restricciones del suelo.
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
 
+        // Cambiar la escala del objeto del jugador para reflejarlo horizontalmente si es necesario.
+        if (direction.x > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (direction.x < 0 && isFacingRight)
+        {
+            Flip();
+        }
+
         transform.position = newPosition;
+    }
+
+    private void Flip()
+    {
+        // Cambiar la dirección del personaje al reflejarlo horizontalmente.
+        isFacingRight = !isFacingRight;
+
+        // Obtener la escala actual.
+        Vector3 scale = transform.localScale;
+
+        // Reflejar horizontalmente el objeto del jugador.
+        scale.x *= -1;
+
+        // Aplicar la nueva escala.
+        transform.localScale = scale;
     }
 
     #endregion

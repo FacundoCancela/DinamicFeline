@@ -1,19 +1,23 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicAttackStrategy : IAttackStrategy
+public class SpecialAttack : IAttackStrategy
 {
-    private int damage = 10; // Daño del golpe básico.
-    private float attackDuration = 0.3f; // Duración total del ataque en segundos (ida y vuelta).
+    private int damage = 20; // Daño del golpe básico.
+    private float attackDuration = 0.3f;// Duración total del ataque en segundos (ida y vuelta).
     private bool isAttacking = false; // Variable para rastrear si se está realizando un ataque.
+    private bool isFacingRight = true;
 
     public bool IsAttacking
     {
         get { return isAttacking; }
     }
 
-    public void Attack(Transform armTransform)
+    public void Attack(Transform armTransform, bool facingRight)
     {
+        isFacingRight = facingRight;
+
         if (!isAttacking)
         {
             isAttacking = true; // Indicar que se está atacando.
@@ -35,7 +39,7 @@ public class BasicAttackStrategy : IAttackStrategy
         {
             // Calcular la nueva posición del brazo con interpolación lineal.
             float progress = timer / (attackDuration / 2);
-            Vector3 targetPosition = initialArmPosition + new Vector3(1f, 0, 0);
+            Vector3 targetPosition = isFacingRight ? initialArmPosition + new Vector3(-2f, -0.25f, 0) : initialArmPosition + new Vector3(2f, -0.25f, 0);
             armTransform.position = Vector3.Lerp(initialArmPosition, targetPosition, progress);
 
             // Actualizar el temporizador.
@@ -53,7 +57,7 @@ public class BasicAttackStrategy : IAttackStrategy
             // Calcular la nueva posición del brazo con interpolación lineal.
             float progress = timer / (attackDuration / 2);
             Vector3 targetPosition = initialArmPosition;
-            armTransform.position = Vector3.Lerp(initialArmPosition + new Vector3(1f, 0, 0), targetPosition, progress);
+            armTransform.position = Vector3.Lerp(isFacingRight ? initialArmPosition + new Vector3(-2f, -0.25f, 0) : initialArmPosition + new Vector3(2f, -0.25f, 0), targetPosition, progress);
 
             // Actualizar el temporizador.
             timer += Time.deltaTime;
