@@ -13,14 +13,15 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     public GameObject groundObject; // Collider del suelo
 
     public Transform playerTransform; // Transform del jugador para seguirlo.
+    public EnemyAttackController EnemyAttackController;
 
     #endregion
 
     #region PRIVATE_PROPERTIES
 
     private Collider2D groundCollider;
-    private bool isFacingRight = true; // Indica si el enemigo está mirando hacia la derecha.
-    private bool playerIsClose = false;
+    public bool isFacingRight = true; // Indica si el enemigo está mirando hacia la derecha.
+    public bool playerIsClose = false;
 
     #endregion
 
@@ -41,7 +42,6 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         if (distanceToPlayer <= 3.5f)
         {
             playerIsClose = true;
-            Debug.Log("Jugador detectado");
         }
         else
         {
@@ -53,7 +53,7 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         Vector2 movement = directionToPlayer * _movementSpeed * Time.deltaTime;
 
         // Restringir el movimiento del enemigo dentro del suelo.
-        if (!playerIsClose)
+        if (!playerIsClose && !EnemyAttackController.IsAttacking)
         {
             Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
         }

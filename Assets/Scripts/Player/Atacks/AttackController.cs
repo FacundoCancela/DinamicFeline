@@ -5,7 +5,10 @@ public class AttackController : MonoBehaviour
 {
     private IAttackStrategy currentAttackStrategy;
     private bool isAttacking = false; // Variable para rastrear si se está realizando un ataque.
+    private bool enemyDamaged = false;
     public PlayerMovement playerMovement; // Referencia al PlayerMovement.
+    public IsTouchingEnemy isTouchingEnemy; // Referencia al IsTouchingEnemy.
+    public CharacterStats characterStats;
 
     public bool IsAttacking
     {
@@ -22,6 +25,28 @@ public class AttackController : MonoBehaviour
     public void SetAttackStrategy(IAttackStrategy strategy)
     {
         currentAttackStrategy = strategy;
+    }
+
+    public void HandleEnemyCollision()
+    {
+        if (!enemyDamaged)
+        {
+            // Obtén el GameObject del último enemigo tocado.
+            GameObject enemyObject = isTouchingEnemy.GetTouchedEnemy();
+            if (enemyObject != null)
+            {
+                // Comprueba si el objeto tiene un componente CharacterStats.
+                CharacterStats enemyStats = enemyObject.GetComponent<CharacterStats>();
+
+                if (enemyStats != null && IsAttacking)
+                {
+                    // Obtén el daño del ataque actual y aplícalo al enemigo.
+                    int damage = currentAttackStrategy.GetDamage();
+                    enemyStats.TakeDamage(damage * characterStats.DoDamage());
+                    enemyDamaged = true;
+                }
+            }
+        }
     }
 
     public void PerformAttack()
@@ -41,6 +66,7 @@ public class AttackController : MonoBehaviour
         yield return new WaitForSeconds(currentAttackStrategy.GetAttackDuration());
 
         isAttacking = false; // Indicar que se ha completado el ataque.
+        enemyDamaged = false;
     }
 
     private bool IsFacingRight()
