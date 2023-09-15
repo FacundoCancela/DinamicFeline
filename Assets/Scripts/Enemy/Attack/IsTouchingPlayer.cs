@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class IsTouchingPlayer : MonoBehaviour
 {
-    public bool isPlayer = false;
+    private GameObject touchedPlayer;
+    public EnemyAttackController enemyAttackController;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-           isPlayer = true;
+            touchedPlayer = collision.gameObject;
+            enemyAttackController.HandlePlayerCollision();
         }
     }
 
@@ -18,7 +21,13 @@ public class IsTouchingPlayer : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            isPlayer = false;
+            touchedPlayer = null;
+            enemyAttackController.HandlePlayerCollision();
         }
+    }
+
+    public GameObject GetTouchedPlayer()
+    {
+        return touchedPlayer;
     }
 }

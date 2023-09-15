@@ -7,8 +7,10 @@ public class EnemyAttackController : MonoBehaviour
     private IAttackStrategy currentAttackStrategy;
     public EnemyMovement enemyMovement; // Referencia al EnemyMovement.
     public IsTouchingPlayer isTouchingPlayer;
+    public CharacterStats characterStats;
     private bool isAttacking = false; // Variable para rastrear si se está realizando un ataque.
     private bool canAttack = true; // Variable para controlar si el enemigo puede atacar nuevamente.
+    private bool playerDamaged = false;
     private float attackInterval = 3f; // Intervalo entre ataques en segundos.
     private float attackTimer = 0f;
 
@@ -32,6 +34,28 @@ public class EnemyAttackController : MonoBehaviour
     public void SetAttackStrategy(IAttackStrategy strategy)
     {
         currentAttackStrategy = strategy;
+    }
+
+    public void HandlePlayerCollision()
+    {
+        if (!playerDamaged)
+        {
+            // Obtén el GameObject del último enemigo tocado.
+            GameObject playerObject = isTouchingPlayer.GetTouchedPlayer();
+            if (playerObject != null)
+            {
+                // Comprueba si el objeto tiene un componente CharacterStats.
+                CharacterStats playerStats = playerObject.GetComponent<CharacterStats>();
+
+                if (playerStats != null && IsAttacking)
+                {
+                    // Obtén el daño del ataque actual y aplícalo al enemigo.
+                    int damage = currentAttackStrategy.GetDamage();
+                    playerStats.TakeDamage(damage * characterStats.DoDamage());
+                    playerDamaged = true;
+                }
+            }
+        }
     }
 
     public void PerformAttack()
@@ -60,6 +84,7 @@ public class EnemyAttackController : MonoBehaviour
         yield return new WaitForSeconds(currentAttackStrategy.GetAttackDuration());
 
         isAttacking = false; // Indicar que se ha completado el ataque.
+        playerDamaged = false;
 
         // Iniciar el temporizador de intervalo entre ataques.
         attackTimer = 0f;
