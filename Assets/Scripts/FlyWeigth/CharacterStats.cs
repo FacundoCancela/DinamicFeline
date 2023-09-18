@@ -35,6 +35,14 @@ public class CharacterStats : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log(gameObject.name + " ha muerto.");
+        if(gameObject.CompareTag("Player"))
+        {
+            Debug.Log(gameObject.name + " ha muerto.");
+        }
+        else
+        {
+            Debug.Log(gameObject.name + " ha muerto.");
+            Destroy(gameObject);
+        }
     }
 }

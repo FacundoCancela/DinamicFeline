@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     public AttackController attackController;
     public BlockController blockController;
+    public WeaponManager weaponManager;
     public bool haveAWeapon = false;
 
     private void Update()

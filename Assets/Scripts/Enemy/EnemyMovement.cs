@@ -10,8 +10,6 @@ public class EnemyMovement : MonoBehaviour, IMoveable
 
     public LayerMask groundLayer; // Capa del suelo.
     public Collider2D enemyCollider; // Collider del enemigo.
-    public GameObject groundObject; // Collider del suelo
-
     public Transform playerTransform; // Transform del jugador para seguirlo.
     public EnemyAttackController EnemyAttackController;
 
@@ -29,8 +27,19 @@ public class EnemyMovement : MonoBehaviour, IMoveable
 
     void Start()
     {
-        // Obtener el collider del suelo (ground) desde el objeto asignado en el Inspector.
-        groundCollider = groundObject.GetComponent<Collider2D>();
+        // Buscar el objeto con el script PlayerMovement y asignar su transform al playerTransform.
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            playerTransform = playerMovement.transform;
+        }
+
+        // Buscar el objeto con el tag "Ground" y asignar su collider al groundCollider.
+        GameObject groundObject = GameObject.FindGameObjectWithTag("Ground");
+        if (groundObject != null)
+        {
+            groundCollider = groundObject.GetComponent<Collider2D>();
+        }
     }
 
     void Update()
@@ -45,7 +54,7 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         }
         else
         {
-            playerIsClose= false;
+            playerIsClose = false;
         }
 
         // Movimiento horizontal y vertical hacia el jugador.
@@ -57,7 +66,6 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         {
             Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
         }
-
 
         // Girar hacia la dirección del jugador.
         if (directionToPlayer.x > 0 && !isFacingRight)
