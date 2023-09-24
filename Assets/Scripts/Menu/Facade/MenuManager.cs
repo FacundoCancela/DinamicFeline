@@ -1,8 +1,13 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class ExitButton : MonoBehaviour
+public class MenuManager : MonoBehaviour, IMenuManager
 {
+    public void LoadScene(string sceneName)
+    {
+        // Cargar la escena con el nombre especificado.
+        SceneManager.LoadScene(sceneName);
+    }
     public void ExitGame()
     {
         // Salir de la aplicación (funciona en plataformas compatibles).

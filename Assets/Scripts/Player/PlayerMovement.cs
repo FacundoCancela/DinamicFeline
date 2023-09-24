@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour, IMoveable
     public GameObject groundObject; // Objeto del suelo.
     public Camera mainCamera; // Referencia a la cámara principal.
     public AttackController attackController;
+    public Stats stats;
 
     #endregion
 
@@ -33,6 +34,8 @@ public class PlayerMovement : MonoBehaviour, IMoveable
 
         // Calcular el ancho medio de la cámara en unidades del mundo.
         cameraHalfWidth = mainCamera.orthographicSize * ((float)Screen.width / Screen.height);
+
+        _movementSpeed = stats.speed;
     }
 
     void Update()
@@ -106,4 +109,13 @@ public class PlayerMovement : MonoBehaviour, IMoveable
     }
 
     #endregion
+
+    public void RestoreSnapshot(TimeSnapshot snapshot)
+    {
+        // Restaurar la posición y rotación del jugador desde la instantánea.
+        transform.position = snapshot.Position;
+        transform.rotation = snapshot.Rotation;
+    }
+
+
 }

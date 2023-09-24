@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttackController : MonoBehaviour
+public class BasicEnemyAttackController : MonoBehaviour
 {
     private IAttackStrategy currentAttackStrategy;
     public EnemyMovement enemyMovement; // Referencia al EnemyMovement.
     public IsTouchingPlayer isTouchingPlayer;
     public CharacterStats characterStats;
+    public EnemyTypeObject enemyType;
     private bool isAttacking = false; // Variable para rastrear si se está realizando un ataque.
     private bool canAttack = true; // Variable para controlar si el enemigo puede atacar nuevamente.
     private bool playerDamaged = false;

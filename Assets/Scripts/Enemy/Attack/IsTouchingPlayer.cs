@@ -6,7 +6,7 @@ using UnityEngine;
 public class IsTouchingPlayer : MonoBehaviour
 {
     private GameObject touchedPlayer;
-    public EnemyAttackController enemyAttackController;
+    public BasicEnemyAttackController enemyAttackController;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

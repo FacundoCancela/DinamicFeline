@@ -7,6 +7,16 @@ public class PlayerController : MonoBehaviour
     public WeaponManager weaponManager;
     public bool haveAWeapon = false;
 
+    private ICommand basicAttackCommand;
+    private ICommand specialAttackCommand;
+
+    private void Start()
+    {
+        // Inicializa los comandos concretos.
+        basicAttackCommand = new BasicAttackCommand(attackController);
+        specialAttackCommand = new SpecialAttackCommand(attackController);
+    }
+
     private void Update()
     {
         if(!haveAWeapon)
@@ -16,21 +26,13 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.O))
                 {
-                    // Cambiar a la estrategia de ataque básico.
-                    attackController.SetAttackStrategy(new BasicAttack());
-                    if (!attackController.IsAttacking)
-                    {
-                        attackController.PerformAttack();
-                    }
+                    // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
+                    basicAttackCommand.Execute();
                 }
                 else if (Input.GetKeyDown(KeyCode.I))
                 {
-                    // Cambiar a la estrategia de ataque especial.
-                    attackController.SetAttackStrategy(new SpecialAttack());
-                    if (!attackController.IsAttacking)
-                    {
-                        attackController.PerformAttack();
-                    }
+                    // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
+                    specialAttackCommand.Execute();
                 }
             }
 

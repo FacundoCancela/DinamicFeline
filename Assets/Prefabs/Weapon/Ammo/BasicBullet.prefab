@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
-  _damage: 100
+  _damage: 50
   _lifeTime: 5
   _enemyDamaged: 0
   _travelRight: 0

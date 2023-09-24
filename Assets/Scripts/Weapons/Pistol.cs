@@ -4,7 +4,7 @@ using UnityEngine;
 public class Pistol : MonoBehaviour, IShooteable
 {
     public bool CanFire { get; set; } = true;
-    public int RemainingAmmo { get; set; } = 100;
+    public int RemainingAmmo { get; set; } = 10;
 
     public Transform WeaponTransform;
     public GameObject BulletPrefab;

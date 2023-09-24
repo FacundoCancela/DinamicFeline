@@ -11,7 +11,9 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     public LayerMask groundLayer; // Capa del suelo.
     public Collider2D enemyCollider; // Collider del enemigo.
     public Transform playerTransform; // Transform del jugador para seguirlo.
-    public EnemyAttackController EnemyAttackController;
+    public BasicEnemyAttackController EnemyAttackController;
+    public EnemyTypeObject enemyType;
+
 
     #endregion
 
