@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerDeathObserver : MonoBehaviour, IPlayerDeathObserver
 {
-    public EndLevelButton endLevelButton;
-
     public void OnPlayerDeath()
     {
         endLevel();
@@ -11,6 +9,7 @@ public class PlayerDeathObserver : MonoBehaviour, IPlayerDeathObserver
 
     private void endLevel()
     {
+        FindObjectOfType<PointManager>().SaveFinalScore();
         FindObjectOfType<SceneChanger>().LoadScene("ScoreMenu");
     }
 }

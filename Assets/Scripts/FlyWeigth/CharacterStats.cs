@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +11,20 @@ public class CharacterStats : MonoBehaviour
     private int damage;
     private float speed;
 
+    private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del hijo.
+    private Color originalColor; // Almacena el color original del sprite.
+
     private void Start()
     {
+        // Obtén la referencia al componente SpriteRenderer del hijo.
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        // Almacena el color original del sprite.
+        if (spriteRenderer != null)
+        {
+            originalColor = spriteRenderer.color;
+        }
+
         UpdateStats();
 
         var playerDeathObserver = new PlayerDeathObserver();
@@ -36,9 +49,28 @@ public class CharacterStats : MonoBehaviour
         {
             Die();
         }
+        else
+        {
+            // Cambiar temporalmente el color del sprite a rojo.
+            StartCoroutine(FlashSpriteColor(Color.red, 0.2f)); // Cambia el color a rojo durante 0.2 segundos.
+        }
 
         // Mostrar la vida actual del personaje en el Debug.Log.
         Debug.Log(gameObject.name + " Vida Actual: " + currentHealth);
+    }
+
+    // Corutina para destellar el color del sprite.
+    private IEnumerator FlashSpriteColor(Color flashColor, float duration)
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = flashColor; // Cambiar el color del sprite a rojo.
+
+            yield return new WaitForSeconds(duration); // Esperar la duración especificada.
+
+            // Restaurar el color original del sprite.
+            spriteRenderer.color = originalColor;
+        }
     }
 
     // Método para aplicar un power-up de vida.
@@ -85,7 +117,6 @@ public class CharacterStats : MonoBehaviour
             {
                 observer.OnPlayerDeath();
             }
-            
         }
         else
         {

@@ -305,7 +305,7 @@ MonoBehaviour:
   enemyCollider: {fileID: 428702861921480604}
   playerTransform: {fileID: 0}
   EnemyAttackController: {fileID: 428702860805659384}
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 11400000, guid: ca4f5adf00f6ff740be3944466c6afc7, type: 2}
   isFacingRight: 1
   playerIsClose: 0
 --- !u!114 &428702861921480603
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694c23638cf67dc409ff2d434abd90a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: b445922b80a19fc48810ea1d8e219a1d, type: 2}
+  stats: {fileID: 11400000, guid: 3e57102e6c61dbb40969055727bf9fa2, type: 2}
 --- !u!61 &428702861921480604
 BoxCollider2D:
   m_ObjectHideFlags: 0

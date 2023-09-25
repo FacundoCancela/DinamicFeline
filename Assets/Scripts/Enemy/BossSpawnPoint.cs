@@ -1,16 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class SpawnPoint : MonoBehaviour
+public class BossSpawnPoint : MonoBehaviour
 {
     public EnemyTypeObjectFactory enemyFactory; // Asigna la fábrica de enemigos en el Inspector
     public float detectionRadius = 5f; //rango de deteccion del jugador
     public float spawnOffset = 1.0f; // Distancia entre cada enemigo
     public LayerMask playerLayer; //layer del jugador
 
-    private List<string> enemyTypes = new List<string> { "Enemy1", "Enemy2", "Enemy3"}; // Tipos de enemigos
+    private List<string> enemyTypes = new List<string> { "Boss1" }; // Tipos de enemigos
     private List<string> generatedEnemies = new List<string>(); // Almacena los tipos de enemigos generados en orden
-    public int maxEnemies = 5; // Número total de enemigos a generar
+    public int maxEnemies = 1; // Número total de enemigos a generar
 
     void Start()
     {
