@@ -10,6 +10,11 @@ public class Pistol : MonoBehaviour, IShooteable
     public GameObject BulletPrefab;
     public WeaponManager weaponManager;
 
+
+    void Start()
+    {
+    }
+
     private void Update()
     {
         CanFire = weaponManager.playerHaveWeapon;

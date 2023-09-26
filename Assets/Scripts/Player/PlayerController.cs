@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public WeaponManager weaponManager;
     public bool haveAWeapon = false;
 
+    Animator animator;
+
     private ICommand basicAttackCommand;
     private ICommand specialAttackCommand;
 
@@ -15,6 +17,8 @@ public class PlayerController : MonoBehaviour
         // Inicializa los comandos concretos.
         basicAttackCommand = new BasicAttackCommand(attackController);
         specialAttackCommand = new SpecialAttackCommand(attackController);
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -26,13 +30,22 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.O))
                 {
+                    animator.SetTrigger("Punch");
                     // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
                     basicAttackCommand.Execute();
+
                 }
                 else if (Input.GetKeyDown(KeyCode.I))
                 {
+               
                     // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
                     specialAttackCommand.Execute();
+                }
+
+                else if (Input.GetKeyDown(KeyCode.L))
+                {
+  
+                        animator.SetTrigger("Shoot");   
                 }
             }
 

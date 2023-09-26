@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour, IMoveable
     #endregion
 
     #region PRIVATE_PROPERTIES
-
+    Animator animator;
     private Collider2D groundCollider;
     private float cameraHalfWidth;
     public bool isFacingRight = true; // Indica si el personaje está mirando hacia la derecha.
@@ -35,6 +35,9 @@ public class PlayerMovement : MonoBehaviour, IMoveable
         // Calcular el ancho medio de la cámara en unidades del mundo.
         cameraHalfWidth = mainCamera.orthographicSize * ((float)Screen.width / Screen.height);
 
+ 
+        animator = GetComponent<Animator>();
+
         _movementSpeed = stats.speed;
     }
 
@@ -46,6 +49,16 @@ public class PlayerMovement : MonoBehaviour, IMoveable
             // Movimiento horizontal y vertical.
             float moveX = Input.GetAxis("Horizontal");
             float moveY = Input.GetAxis("Vertical");
+
+            if ((moveX != 0 || moveY != 0))
+            {
+                animator.SetBool("isWalking", true);
+            }
+            else animator.SetBool("isWalking", false);
+
+
+
+
             Vector2 movement = new Vector2(moveX, moveY).normalized * _movementSpeed * Time.deltaTime;
 
             // Calcular las coordenadas de la cámara.
@@ -91,6 +104,8 @@ public class PlayerMovement : MonoBehaviour, IMoveable
         }
 
         transform.position = newPosition;
+
+
     }
 
     private void Flip()
