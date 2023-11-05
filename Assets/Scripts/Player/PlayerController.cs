@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(!haveAWeapon)
+        if (!haveAWeapon)
         {
             // Cambiar la estrategia de ataque según la tecla presionada, solo si no estamos bloqueando.
             if (!blockController.IsBlocking)
@@ -38,15 +38,17 @@ public class PlayerController : MonoBehaviour
                 }
                 else if (Input.GetKeyDown(KeyCode.I))
                 {
-               
+
                     // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
                     specialAttackCommand.Execute();
                 }
 
                 else if (Input.GetKeyDown(KeyCode.L))
                 {
-  
-                        animator.SetTrigger("Shoot");   
+
+                    animator.SetTrigger("Shoot");
+
+
                 }
             }
 
@@ -67,5 +69,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    } 
+
+    void Shoot()
+    {
+        GameObject pistol = GameObject.Find("Pistol(Clone)");
+        pistol.GetComponent<Pistol>().Fire();
     }
+
 }

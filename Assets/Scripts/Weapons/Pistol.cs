@@ -13,6 +13,7 @@ public class Pistol : MonoBehaviour, IShooteable
 
     void Start()
     {
+
     }
 
     private void Update()
@@ -20,27 +21,30 @@ public class Pistol : MonoBehaviour, IShooteable
         CanFire = weaponManager.playerHaveWeapon;
 
 
-        if (CanFire && RemainingAmmo > 0)
-        {
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                Fire();
-            }
-        }
+       
 
         if(RemainingAmmo <= 0)
         {
             Destroy(gameObject);
             weaponManager.playerHaveWeapon = false;
+      
         }
-    }
+   
+        }
 
     public void Fire()
     {
-        if (BulletPrefab != null && WeaponTransform != null)
+
+        if (CanFire && RemainingAmmo > 0)
         {
-            Instantiate(BulletPrefab, WeaponTransform.position, WeaponTransform.rotation);
-            RemainingAmmo--;
+
+
+            if (BulletPrefab != null && WeaponTransform != null)
+            {
+                this.transform.rotation = Quaternion.Euler(0, 0, 0);
+                Instantiate(BulletPrefab, WeaponTransform.position, WeaponTransform.rotation);
+                RemainingAmmo--;
+            }
         }
     }
 }
