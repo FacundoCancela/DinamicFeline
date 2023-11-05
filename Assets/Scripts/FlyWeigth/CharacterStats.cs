@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterStats : MonoBehaviour
 {
     public Stats stats; // Referencia al Scriptable Object de estadísticas.
     private List<IPlayerDeathObserver> playerDeathObservers = new List<IPlayerDeathObserver>();
+    public Slider slider;
 
+    public int CurrentHealth => currentHealth;
     private int currentHealth; // La salud actual del personaje.
     private int damage;
     private float speed;
@@ -31,6 +34,7 @@ public class CharacterStats : MonoBehaviour
 
         // Registrar el observador en CharacterStats
         RegisterPlayerDeathObserver(playerDeathObserver);
+        SetHealthBar();
     }
 
     public void UpdateStats()
@@ -44,6 +48,7 @@ public class CharacterStats : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
+        if(slider) slider.value = currentHealth;
 
         if (currentHealth <= 0)
         {
@@ -77,9 +82,10 @@ public class CharacterStats : MonoBehaviour
     public void ApplyHealthPowerUp(int healthAmount)
     {
         currentHealth += healthAmount;
-
+        if (slider) slider.value = currentHealth;
         // Asegurarse de que la salud no supere el límite máximo.
         currentHealth = Mathf.Min(currentHealth, stats.health);
+
     }
 
     // Método para aplicar un power-up de daño.
@@ -123,6 +129,21 @@ public class CharacterStats : MonoBehaviour
             Debug.Log(gameObject.name + " ha muerto.");
             PointManager.Instance.AddPoints(10);
             Destroy(gameObject);
+        }
+    }
+
+    void SetHealthBar()
+    {
+        if (!gameObject.CompareTag("Player"))
+        {
+            //Si el objeto no es el jugador destruir componente slider para que no tire errores por todos lados
+            Destroy(slider);
+        }
+
+        else
+        {
+            slider.maxValue = currentHealth;
+            slider.value = slider.maxValue;
         }
     }
 }

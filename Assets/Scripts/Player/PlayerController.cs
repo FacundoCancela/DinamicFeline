@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class PlayerController : MonoBehaviour
 {
     public AttackController attackController;
@@ -8,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public bool haveAWeapon = false;
 
     Animator animator;
+
+
 
     private ICommand basicAttackCommand;
     private ICommand specialAttackCommand;
