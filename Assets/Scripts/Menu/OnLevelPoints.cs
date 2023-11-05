@@ -15,7 +15,7 @@ public class OnLevelPoints : MonoBehaviour
         {
             // Obtén la puntuación actual del PointManager y muestra "Points: X".
             int currentScore = PointManager.Instance.GetScore();
-            scoreText.text = "Points: " + currentScore.ToString();
+            scoreText.text = "SCORE - " + currentScore.ToString();
         }
     }
 }

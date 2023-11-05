@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 828e4f3755add5b43a0d6875eed7f2f3
+guid: c7b26812af141214f95197902fd6290a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -105,12 +105,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DF Items_0
+      name: DF Items 1_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 38
-        width: 22
+        x: 3
+        y: 37
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec252732c586a4418a019be4274132e
+      internalID: 825336286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DF Items 1_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 37
+        width: 29
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -119,41 +140,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74c68629f49a4fa4e80bcd7504f161ec
-      internalID: -542727934
+      spriteID: 0a8f8e241aa86f04c89a56851327df27
+      internalID: 1988504892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DF Items_1
+      name: DF Items 1_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 37
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb213eff4ff6c2439a623573d1415ed
+      internalID: 38695152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DF Items 1_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9412843e1d0eb814b84c4c05afdb8cd4
+      internalID: 236743401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DF Items 1_4
       rect:
         serializedVersion: 2
         x: 34
-        y: 38
-        width: 27
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95a2fd78c4479324ca3a0fe5c65595e0
-      internalID: 190544425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DF Items_2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 5
+        y: 8
         width: 28
-        height: 22
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39da39aff94b2d545a3d01faa94e6fcb
-      internalID: -350251757
+      spriteID: 22cde738058b56549a0aba5ff7128117
+      internalID: 14577456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DF Items_3
+      name: DF Items 1_5
       rect:
         serializedVersion: 2
-        x: 36
-        y: 19
-        width: 9
-        height: 11
+        x: 66
+        y: 16
+        width: 12
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,29 +224,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a16119eb9bbd614881abe67d015873b
-      internalID: -252719693
+      spriteID: b26931ec7c7771a4d859e4234ccf91fc
+      internalID: -961623483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DF Items_4
+      name: DF Items 1_6
       rect:
         serializedVersion: 2
-        x: 52
-        y: 22
-        width: 8
-        height: 3
-      alignment: 9
-      pivot: {x: 0.49999967, y: 0.52177906}
+        x: 83
+        y: 21
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9bb73a0b79b2a64a9facb3df42e8d48
-      internalID: 1344702649
+      spriteID: 26eb7bb0bcb1af645b484173321f063d
+      internalID: 93354379
       vertices: []
       indices: 
       edges: []
@@ -220,11 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DF Items_0: -542727934
-      DF Items_1: 190544425
-      DF Items_2: -350251757
-      DF Items_3: -252719693
-      DF Items_4: 1344702649
+      DF Items 1_0: 825336286
+      DF Items 1_1: 1988504892
+      DF Items 1_2: 38695152
+      DF Items 1_3: 236743401
+      DF Items 1_4: 14577456
+      DF Items 1_5: -961623483
+      DF Items 1_6: 93354379
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
