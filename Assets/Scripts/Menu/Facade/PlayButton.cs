@@ -6,7 +6,7 @@ public class PlayButton : MonoBehaviour
     public string sceneToLoad; // Nombre de la escena a la que deseas cambiar.
     private IMenuManager menuManager;
     private PointManager pointManager;
-
+    AudioSource audioSource;
     private void Start()
     {
         menuManager = FindObjectOfType<MenuManager>();
@@ -17,6 +17,7 @@ public class PlayButton : MonoBehaviour
         if (playButton != null)
         {
             playButton.onClick.AddListener(LoadGameScene);
+            
         }
     }
 

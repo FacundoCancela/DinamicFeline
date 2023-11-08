@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
+    AudioManager_Character audioManager;
 
 
     private ICommand basicAttackCommand;
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour
         specialAttackCommand = new SpecialAttackCommand(attackController);
 
         animator = GetComponent<Animator>();
+        audioManager = GetComponentInChildren<AudioManager_Character>();
+
     }
 
     private void Update()
@@ -32,22 +35,25 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.O))
                 {
                     animator.SetTrigger("Punch");
+                    audioManager.AS_basicAttack.Play();
                     // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
                     basicAttackCommand.Execute();
+                    
 
                 }
                 else if (Input.GetKeyDown(KeyCode.I))
                 {
-
+                    audioManager.AS_specialAttack.Play();
                     // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
                     specialAttackCommand.Execute();
                 }
 
                 else if (Input.GetKeyDown(KeyCode.L))
                 {
-
-                    animator.SetTrigger("Shoot");
-
+                  
+                   
+                        animator.SetTrigger("Shoot");
+                  
 
                 }
             }

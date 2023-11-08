@@ -17,10 +17,14 @@ public class CharacterStats : MonoBehaviour
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del hijo.
     private Color originalColor; // Almacena el color original del sprite.
 
+    Animator animator;
+    AudioSource audioSource;
     private void Start()
     {
         // Obtén la referencia al componente SpriteRenderer del hijo.
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         // Almacena el color original del sprite.
         if (spriteRenderer != null)
@@ -49,6 +53,14 @@ public class CharacterStats : MonoBehaviour
     {
         currentHealth -= damageAmount;
         if(slider) slider.value = currentHealth;
+        if (CompareTag("Player"))
+        {
+            animator.SetTrigger("Damaged");
+        }
+        else
+        {
+            audioSource.Play();
+        }
 
         if (currentHealth <= 0)
         {

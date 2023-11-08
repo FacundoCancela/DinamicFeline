@@ -10,10 +10,11 @@ public class Pistol : MonoBehaviour, IShooteable
     public GameObject BulletPrefab;
     public WeaponManager weaponManager;
 
+    AudioSource audio;
 
     void Start()
     {
-
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -37,7 +38,7 @@ public class Pistol : MonoBehaviour, IShooteable
 
         if (CanFire && RemainingAmmo > 0)
         {
-
+            audio.Play();
 
             if (BulletPrefab != null && WeaponTransform != null)
             {
