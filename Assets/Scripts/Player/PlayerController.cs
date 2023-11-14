@@ -74,7 +74,10 @@ public class PlayerController : MonoBehaviour
     void Shoot()
     {
         GameObject pistol = GameObject.Find("Pistol(Clone)");
-        pistol.GetComponent<Pistol>().Fire();
+        if (pistol != null)
+        {
+            pistol.GetComponent<Pistol>().Fire();
+        }
     }
 
 }
