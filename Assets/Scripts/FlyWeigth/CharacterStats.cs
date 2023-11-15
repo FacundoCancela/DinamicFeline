@@ -17,10 +17,14 @@ public class CharacterStats : MonoBehaviour
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del hijo.
     private Color originalColor; // Almacena el color original del sprite.
 
+    Animator animator;
+    AudioManager_Character audioManager;
     private void Start()
     {
         // Obtén la referencia al componente SpriteRenderer del hijo.
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        audioManager = GetComponent<AudioManager_Character>();
 
         // Almacena el color original del sprite.
         if (spriteRenderer != null)
@@ -35,6 +39,7 @@ public class CharacterStats : MonoBehaviour
         // Registrar el observador en CharacterStats
         RegisterPlayerDeathObserver(playerDeathObserver);
         SetHealthBar();
+
     }
 
     public void UpdateStats()
@@ -47,12 +52,16 @@ public class CharacterStats : MonoBehaviour
     // Método para recibir daño.
     public void TakeDamage(int damageAmount)
     {
+
+        audioManager.AS_hurt.Play();
         currentHealth -= damageAmount;
         if(slider) slider.value = currentHealth;
 
+        animator.SetTrigger("Damaged");
+
         if (currentHealth <= 0)
         {
-            Die();
+            animator.SetTrigger("Death");
         }
         else
         {

@@ -23,12 +23,21 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     public bool isFacingRight = true; // Indica si el enemigo está mirando hacia la derecha.
     public bool playerIsClose = false;
 
+    GrafoManager grafo;
+    int currentNode = 0;
+    Vector3 newPosition;
+    Vector3 direction;
+    Animator anim;
+
     #endregion
 
     #region UNITY_EVENTS
 
     void Start()
     {
+        GameObject gameObject = GameObject.Find("GrafoManager");
+        grafo = gameObject.GetComponent<GrafoManager>();
+        anim = GetComponent<Animator>();
         // Buscar el objeto con el script PlayerMovement y asignar su transform al playerTransform.
         PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
         if (playerMovement != null)
@@ -46,6 +55,15 @@ public class EnemyMovement : MonoBehaviour, IMoveable
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentNode = grafo.NextPosAvailable(currentNode);
+
+            newPosition = grafo.PathFinding(newPosition, currentNode);
+
+            direction = newPosition - transform.position;
+        }
+
         // Calcular la distancia entre el enemigo y el jugador.
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
@@ -63,10 +81,17 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
         Vector2 movement = directionToPlayer * _movementSpeed * Time.deltaTime;
 
+        
+
         // Restringir el movimiento del enemigo dentro del suelo.
         if (!playerIsClose && !EnemyAttackController.IsAttacking)
         {
+            anim.SetBool("isWalking", true);
             Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
         }
 
         // Girar hacia la dirección del jugador.
@@ -78,6 +103,8 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         {
             Flip();
         }
+
+        transform.position += direction.normalized * _movementSpeed * Time.deltaTime;
     }
 
     #endregion
@@ -114,6 +141,24 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         // Aplicar la nueva escala.
         transform.localScale = scale;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            _movementSpeed = 0;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
+            _movementSpeed = 2;
+            direction = newPosition - transform.position;
+        }
+    }
+
 
     #endregion
 }
