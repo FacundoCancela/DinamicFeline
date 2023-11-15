@@ -34,8 +34,9 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.O))
                 {
-                    animator.SetTrigger("Punch");
                     audioManager.AS_basicAttack.Play();
+                    animator.SetTrigger("Punch");
+                    
                     // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
                     basicAttackCommand.Execute();
                     

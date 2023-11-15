@@ -15,9 +15,15 @@ public class BasicEnemyAttackController : MonoBehaviour
     private float attackInterval = 3f; // Intervalo entre ataques en segundos.
     private float attackTimer = 0f;
 
+    Animator anim;
+    AudioManager_Character audiomanager;
+
     private void Start()
     {
         this.SetAttackStrategy(new EnemyBasicAttack());
+
+        anim = GetComponentInParent<Animator>();
+        audiomanager = GetComponentInParent<AudioManager_Character>();
     }
 
     public bool IsAttacking
@@ -63,6 +69,8 @@ public class BasicEnemyAttackController : MonoBehaviour
     {
         if (!isAttacking && canAttack && currentAttackStrategy != null)
         {
+            audiomanager.AS_basicAttack.Play();
+            anim.SetTrigger("attack");
             StartCoroutine(AttackCoroutine());
         }
     }
@@ -110,6 +118,7 @@ public class BasicEnemyAttackController : MonoBehaviour
             // Si el jugador está cerca y el temporizador ha alcanzado el intervalo, realiza un ataque.
             if (attackTimer >= attackInterval)
             {
+
                 PerformAttack();
                 canAttack = false; // Desactivar la posibilidad de atacar nuevamente.
             }

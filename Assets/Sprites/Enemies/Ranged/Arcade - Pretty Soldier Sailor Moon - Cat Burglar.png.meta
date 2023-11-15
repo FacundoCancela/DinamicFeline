@@ -1,0 +1,4171 @@
+fileFormatVersion: 2
+guid: 323eba9b2bd513b4fad818c82bb39234
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 956
+        width: 62
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ece51f6d3560b489f7cfae1ad3aedc
+      internalID: 1467755946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 958
+        width: 60
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83e67a4fb91adc4d9f09342bcbeeea2
+      internalID: -1531344426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 958
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3270149b4d764b4ebc7d7120d839322
+      internalID: 1015208731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 960
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7052fabd641e84b8b73adafc8770fd
+      internalID: 1268190572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 958
+        width: 55
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a390f34a085d4418125bc4fd4ef412
+      internalID: 1813137685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 961
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560e428eafa0f7840b3d1826859b4ff9
+      internalID: 929545787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_6
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 961
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8233052e72ef74d881dafd644b66a8
+      internalID: 615519031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_7
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 961
+        width: 62
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2e833da9d6b084c83d91ac47379261
+      internalID: -82043562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 961
+        width: 62
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fbbdd04adf2e44ab489d9cf860767b
+      internalID: -480242271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_9
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 961
+        width: 62
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ceb489c8861b824e993c0709fd231aa
+      internalID: 699844329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 855
+        width: 71
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b289ea9d5a5e60a479ace51ea6080ccf
+      internalID: -1665636101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_11
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 847
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56d086d9051b1c4f81c1925ea06b519
+      internalID: 921145943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 845
+        width: 58
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ea01fef1c1767488a065611b73b2f4
+      internalID: -1641029160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 846
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f09a10646ef0d4ab47428e3bd6aaaf
+      internalID: 705375452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_14
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 842
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b04dfc432ed8e4fb0c7b410e21131e
+      internalID: -1817248489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 844
+        width: 62
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbca3b7b1f420804ba9e4e27da2d1197
+      internalID: 689545872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 846
+        width: 63
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1ec1ca4bfee9a4dbfe6c89b484b64f
+      internalID: -1864782349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 851
+        width: 55
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd094fbc4d277e4492dd8d9aa743a00
+      internalID: -1261591764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 879
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469c46f0fa7eb234abcd7206e39bffdc
+      internalID: -1115332033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_19
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 881
+        width: 100
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaa89b8353f5844e9c118e7bd9d6fc4
+      internalID: 1268494535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 846
+        width: 73
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc18b67a9ba4fd429994607952d8a23
+      internalID: -147202458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 731
+        width: 89
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595a76894d9a75f438eef9a1e6488496
+      internalID: -754894988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 732
+        width: 55
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bbf1de4a01bf04bad34e8a4344d510
+      internalID: 1239333251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 732
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c351811d6889547be0c307e2a6cf48
+      internalID: 1816391846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_24
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 716
+        width: 68
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bf814db113d3e4f802b26c3f855f9e
+      internalID: -985843925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_25
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 716
+        width: 53
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aee92c6dc5b968408471544d577c7d0
+      internalID: 597106247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_26
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 718
+        width: 58
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6ab56c0fc1c9c4c8194b232be61b21
+      internalID: -653118804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_27
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 716
+        width: 56
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd95fbcbce41b747b183ff6b61e38a9
+      internalID: 1592789970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_28
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 717
+        width: 80
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35e9ac56b9b1fb469c76ad397d514b7
+      internalID: 1485873645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 746
+        width: 105
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef84667800a20ba469207908f4fccd86
+      internalID: -1518932841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_30
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 769
+        width: 106
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc492d953382f645879e5f5ad5a6af0
+      internalID: 39801807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_31
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 727
+        width: 108
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa129c5cd4760af449acf5f12755627a
+      internalID: -593314392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 699
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5d9211a3922aa4f8d14afa6617d8ba
+      internalID: -1677311880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 694
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a4d784f85203945b5079f69545bf7b
+      internalID: 116400754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_34
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 595
+        width: 74
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cbb5d3dab2d05409a20fca4bb5c051
+      internalID: -1156392718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_35
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 637
+        width: 64
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13680ae95f662142add00a5ad195781
+      internalID: 1843756263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_36
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 601
+        width: 62
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1858a12f0951f80409672a5f1302da87
+      internalID: -254943644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_37
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 594
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4713f0c0f4a28d4683ce730b6929f7f
+      internalID: -2145458441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 594
+        width: 60
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443b49c1786f58048b1a7e2a56167d66
+      internalID: -95226298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_39
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 594
+        width: 59
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44a5d38d8cfd124e83807979ae4d0e4
+      internalID: 1474034048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_40
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 649
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eadade6ebc6c445b1f2d6d53ba4224
+      internalID: 573700858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_41
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 671
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3217a67e85e004d9dea9b25dd0949a
+      internalID: -1776718489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_42
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 637
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3187e387b76e4d5418fbeae6c025128d
+      internalID: -127928075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_43
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 634
+        width: 94
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd747d7d07fc55848a307424b2fbce53
+      internalID: -313001208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_44
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 634
+        width: 56
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11179296ec1f53b44976487e2aa57470
+      internalID: -132903643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_45
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 609
+        width: 83
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f2baa5d447e584990a878182ae01eb
+      internalID: -2075589459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_46
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 610
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d1bb5d679fd9a4fb3b61cce77f42b0
+      internalID: -1972169086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_47
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 660
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba9b1252c9712e48a29476989669d68
+      internalID: -1225954069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_48
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 639
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a3675548a5850409633382538485d7
+      internalID: 1601181014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_49
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 643
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c010abc722cecb549a17571032ae79ce
+      internalID: 1978554720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_50
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 609
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb77e3e28d92b8c41ae975d9245ee1ac
+      internalID: -486428455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_51
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 618
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186795c0ef5ee142826d3737faf7dc0
+      internalID: 755654647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_52
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 615
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1b682c16899de4dbd0e929e4286b0b
+      internalID: 1064343674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_53
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 628
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feadb2e85f68aa4eb5d732455f98bca
+      internalID: -2126837153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_54
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 614
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bc52046f3da3c40886d36a07bb0c7d
+      internalID: -1456600712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_55
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 608
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c5fe462e8bb374ba2f8bf649a2d62f
+      internalID: 1716390302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_56
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 479
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bd7311f590a324da30dc9b20b7bc4c
+      internalID: -1788378441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_57
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 479
+        width: 61
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e5af33fad05644db93803d178200d9
+      internalID: 1884817878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_58
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 479
+        width: 76
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dc4757810a2fd40b63d678d0356081
+      internalID: -907013832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_59
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 479
+        width: 73
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be96203871814dc4f9514077c99a4ece
+      internalID: -1523262777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_60
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 569
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0978801d7b9c1ab41a5633bab3d5f81d
+      internalID: -1914422295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_61
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 568
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a031b3e2576664283a4db0bdb3c161
+      internalID: 82423211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 567
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fd81be1785a36489e4841d6b7fd822
+      internalID: 943183948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_63
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 567
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a98f3a14d641d4580004741f89e98b
+      internalID: 192823148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_64
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 568
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c5d8b74c7611d4992aa6fdc9e4aea0
+      internalID: -1715146514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_65
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 570
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55a98f9a93ff5a4d89e18ab43ff35df
+      internalID: -1952605450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_66
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 570
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727b335b88df77a4f979bdfef2649fe4
+      internalID: -584659321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_67
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 570
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9990e8174d098f24ba9864b66214117f
+      internalID: 837074136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_68
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 568
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d282c315573e748a5d1a044ef11691
+      internalID: -796136414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_69
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 550
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c297981e705983a46bf961cd6ee6f87d
+      internalID: 586244435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_70
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 544
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c063e7bd90b834a8b41fa645c07c98
+      internalID: -1130441204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_71
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 548
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea8483e176519646aa40e0007c743fc
+      internalID: -84512689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_72
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 547
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655d14e35cc2b4b47927a2d69a785b39
+      internalID: 606093697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_73
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 544
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919725f6cae09474bb2ed041a3fd6f2b
+      internalID: -1950078804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_74
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 546
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951a90585ee6b0744b9058b47437e6d9
+      internalID: 1628991107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_75
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 550
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46ce32be2aac9b429438a9873102f54
+      internalID: -502489944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_76
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 546
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3314d40cba94a844f98fea2548c14e2a
+      internalID: 1301587443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_77
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 552
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0d155cda4ba9a4c8d1bb07768b0200
+      internalID: 603505656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_78
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 546
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465ba8ceccad56b48a1c5660bf981311
+      internalID: 1650052331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_79
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 554
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a835f2a11e7434ba6a927a1e578b29
+      internalID: 241345237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_80
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 544
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d77ab504b5c39447b7329fd5390fef3
+      internalID: -1601694293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 551
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a560dd73e6f72c42bdb35134d3a5a7a
+      internalID: 1195348828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_82
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 548
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc32e79d5c92a3e49afb3054b7fe6f7d
+      internalID: 1718918762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_83
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 549
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6391b52ef7f2ef54aacfb4d6f58d85db
+      internalID: 144748644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_84
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 545
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861fc4d4cd620f144af0207f41a21ad8
+      internalID: 1549029812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_85
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 543
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dced9995ecd9045b6d0bf64b4809db
+      internalID: -988096529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_86
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 543
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325ac42836dbe804da2444bdfe39f585
+      internalID: 1564313930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_87
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 506
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cf570d15530df41a9305ca1e69bbfe
+      internalID: 1860342712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_88
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 505
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f594e52372d4e4b40bdc6ac3558f10af
+      internalID: 1403526929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_89
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 510
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df50febe0c7dc24ab6bccfe8b8de018
+      internalID: -1135214611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_90
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 515
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dd5d1d009e9ff4e9aa3c2e9989f052
+      internalID: 1272814514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_91
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 504
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb28caceeb21ce419912d7eb33410c7
+      internalID: 1559428659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_92
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 506
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0a3252c4c549044a7efb3077fb6be7
+      internalID: -1248570917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_93
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 517
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f4bb0c5c5a5934dad4ff0d1ec4be7e
+      internalID: 328886089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_94
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 509
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f611ea34f2342d46a3759db4f95d80c
+      internalID: -760440155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_95
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 503
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecc8fa278c665a4ea0a2356e85dc2b6
+      internalID: 299551559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_96
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 508
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d138464092abfe549adfef31346ebbe0
+      internalID: -255632346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_97
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 503
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ab22da5b7b83541b59663f66628957
+      internalID: 299058051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_98
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 507
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db212a8252abc38439296961f86cb7a7
+      internalID: 797123612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_99
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 352
+        width: 60
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652081232e229314a9b325030d0c0c3e
+      internalID: -567001650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_100
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 352
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e121d5979387c40b3adb9ecbe6c5ba
+      internalID: -1309917387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_101
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 354
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1486ee45524a6f24a8b55221a9248cf7
+      internalID: 445688000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 55
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f06ec88d08b6e41907b7b0f469dbea
+      internalID: 450433660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_103
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 355
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83de7489a5df28346b5ae4f0322aa550
+      internalID: 791187487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_104
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 355
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528c02366013cf84eb668d0143918eec
+      internalID: 1294837237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_105
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 352
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2d4098cc2f15340aa0841c14e625d8
+      internalID: 1003950195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_106
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 352
+        width: 68
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f9a7fbed533664bb0add6d68a1ebcc
+      internalID: 43015091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_107
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 353
+        width: 87
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139160551b21f0c4ab69a449c484dfbf
+      internalID: 870787938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_108
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 353
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca952d0fd0a8964d89b3d6e83eae92f
+      internalID: -274238592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_109
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 353
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd372cc13c9e49c4c9fee6bbbc1cbfd9
+      internalID: 1356698141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_110
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 297
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afae6356b9eff7346882addb39cefd37
+      internalID: 1629927396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_111
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 298
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c3644ae1eb8df45b2c08602239cbb6
+      internalID: 203272450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_112
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 302
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683991876a485814699fcf220e395c0d
+      internalID: -1458576986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_113
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 308
+        width: 41
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1282c6866f96de4892b636df640717e
+      internalID: 913300918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_114
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 313
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6466da120da474f8aecf9f06850c47
+      internalID: -1494492064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_115
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 284
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6320043e82ab1d48812b294e145fbf3
+      internalID: 1844397907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_116
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 273
+        width: 9
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b1c9d75997fac4190dc7b0270294a1
+      internalID: -1204076319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_117
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 308
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c891510655ba51d428fcdac6fdd75405
+      internalID: 1227708692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_118
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 300
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3019e3234d7f642b7920b88bbdf2b7
+      internalID: -1332955081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_119
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 276
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50da5b6b4ce663f438d1248c72dd8efb
+      internalID: 410717053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_120
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 290
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895341dec145a384599b54b43b3aba61
+      internalID: -1583964674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_121
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 302
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc2463f041b99e4dac4985a84ad90ae
+      internalID: 1366834437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_122
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 298
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95df3417205e8b46a882508a3755fd6
+      internalID: 30011036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_123
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12c07753b8a63545a9df36577029327
+      internalID: 402808012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_124
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 286
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bad9de936e72842995fecd483fa84a
+      internalID: -565986942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_125
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 289
+        width: 41
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3717bc0f7c2931b488888732d0cf0af3
+      internalID: 1212302069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_126
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 271
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf1cd6f34e7290409f440bb53681886
+      internalID: -1907522259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_127
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 275
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464168aadf3fbfe40854b623277f1479
+      internalID: -553411293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_128
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 281
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f732519fc1551a4dbe46b93f03ef37b
+      internalID: 866423376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_129
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 246
+        width: 7
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f5af29fe8bbd94297e8c9c9b794d9b
+      internalID: 1600449792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_130
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 259
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6a6aee99a3d1c41a8230b5c2eb1b74
+      internalID: -1247072483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_131
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 262
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead706b080cb75c44a548ecba8c88713
+      internalID: -1319547408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_132
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 261
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fe62d98c623a8419d795a96a68e714
+      internalID: 1345935794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_133
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 274
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84305613dc794f46906339f26fb4052
+      internalID: -146398807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_134
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 262
+        width: 42
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbff82f9b7f50eb4481ec07c023f4557
+      internalID: -812906170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_135
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 251
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec3e630d2e8f5342b744064a03f8987
+      internalID: 1659903908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_136
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 257
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609e8d7b759e6094c861bdad3c843c0b
+      internalID: 1431102710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_137
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 247
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189045da3886afc48852f52ae9af486d
+      internalID: 1705866296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_138
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 129
+        width: 60
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e426965e5ceaecc4bb25ef6bea459932
+      internalID: 1294191378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_139
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 129
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4db62474bf151443bd8dda0cafaff6c
+      internalID: 1338368820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_140
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 131
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf4dfff20ce1b843b2ef13faa985136
+      internalID: 1318448246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_141
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 129
+        width: 55
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d62d44292a8934780f24c30c37a279
+      internalID: -2058810619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_142
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 132
+        width: 48
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b4a9c19be35bf44b9d8645df90c34f
+      internalID: -1858516485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_143
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 132
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db424fe4f168c548b04c98205e3cbea
+      internalID: -380989310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_144
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 128
+        width: 68
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed811e0a711b0b44aa422a3f63b6d484
+      internalID: -1155932035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_145
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 130
+        width: 73
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822c64dfb1e7bf843a233706527ad71d
+      internalID: -478655775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_146
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 197
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f6a393e11e11b489353025e60b76e5
+      internalID: 1226011967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_147
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 197
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b3f996f8c5e349890523b09719487
+      internalID: 1029484436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_148
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 197
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87c1f8a771dd274b9927708a577d676
+      internalID: 1426678206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_149
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 197
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1d166f77e1fe34897427105c264243
+      internalID: 1229222263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_150
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 166
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2848083a73ed54890fc3499d1b1a1b
+      internalID: -471647765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_151
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 166
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaa85f8e1ec9254e92fb7a04437af90
+      internalID: 1632831107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_152
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 7
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27eadaa8da0eeb4dac8de9ed8aecc61
+      internalID: 915436242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_153
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 17
+        width: 71
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf412571adc5da4d82673d02b95d441
+      internalID: -511474523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_154
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 9
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf448142451787348b685dfab155f0a3
+      internalID: 1748408603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_155
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 8
+        width: 58
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d609ef00b88972f41908e14b69afd099
+      internalID: -984566375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_156
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 8
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36530e6efceb55a42b9bfa5795bc26ef
+      internalID: -1026965237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_157
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 8
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f16649d6cb07b42a96cef03edf25bf
+      internalID: 2068081290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_158
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 10
+        width: 62
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c011384bff8f4c42a6cc0e395cc4394
+      internalID: 91851951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_159
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 64
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564ba2170793e5146821abf833080784
+      internalID: 1023618924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_160
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 80
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7958bd2e8e2e44ebd1eac1d9216d49
+      internalID: 409379058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_161
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 69
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f8ffffa4861944d94f8a84676a0c2f
+      internalID: 180503871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_162
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1710dd46f661e43b14ee51f9049fa7
+      internalID: 1170491209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_163
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 67
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffca7ba45ad97b44f9c806c8032bff9f
+      internalID: -335268867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_164
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f61dd97ed1fdf4991a665bb50e3dae
+      internalID: -1985885360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_165
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 67
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adb74ef5e92eab4fabc107377724aeb
+      internalID: -942951966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_166
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 56
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e229bc0e86b3ee4bb47635e2421e031
+      internalID: 66454202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_167
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 58
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2c24ddbf0d5bd4aafbf731486326dd
+      internalID: 831544303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_168
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 58
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d2a8cc71ea7144ea4f96229663b6e7
+      internalID: -728496091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_169
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 58
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a9441583dafe04f86d655ffe5a42f1
+      internalID: 693952648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_170
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 58
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f256950bafc8541afdc0c7e1151c91
+      internalID: -1253441150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_171
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 23
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf4dce8c141e75448da2a92dd9245f6
+      internalID: -242274548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_172
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 47
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f2e69f9a15c45469ab3f15a52a0157
+      internalID: 412495308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_173
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 47
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2045426b8ce064ab3f6c9937029713
+      internalID: 1853729149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_174
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 47
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1270f96f3f27da64bb239ac7befba11e
+      internalID: 1883085234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_175
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 47
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dba5468cd0826e48b84e5ccbf39e560
+      internalID: -1887759216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_176
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 37
+        width: 38
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ae234f866979e4b89f9186c6dd61f4
+      internalID: 1443076809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_177
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 37
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623f008fd64c5e540b76624acdefab31
+      internalID: 161896439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_178
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 37
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4323984790cf0dc4c8a0f13888fed91e
+      internalID: -470118903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_179
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2aac7c5386fdf44aca008e248d8bbc
+      internalID: -1573278677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_180
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 26
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e7653cc76290444813f4219203ff4c
+      internalID: -325370837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_181
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 26
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92e4277303821a458dc0c9d82c7b5e4
+      internalID: 2075489657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_182
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 26
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e11c11aa5dc32144b203ecde44f6da4
+      internalID: 544846558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pretty Soldier Sailor Moon - Cat Burglar_183
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 8
+        width: 73
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7e74dc424e4864081559bd576f1c28
+      internalID: -1394508453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_0: 1467755946
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_1: -1531344426
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_10: -1665636101
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_100: -1309917387
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_101: 445688000
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_102: 450433660
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_103: 791187487
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_104: 1294837237
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_105: 1003950195
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_106: 43015091
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_107: 870787938
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_108: -274238592
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_109: 1356698141
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_11: 921145943
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_110: 1629927396
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_111: 203272450
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_112: -1458576986
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_113: 913300918
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_114: -1494492064
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_115: 1844397907
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_116: -1204076319
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_117: 1227708692
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_118: -1332955081
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_119: 410717053
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_12: -1641029160
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_120: -1583964674
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_121: 1366834437
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_122: 30011036
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_123: 402808012
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_124: -565986942
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_125: 1212302069
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_126: -1907522259
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_127: -553411293
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_128: 866423376
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_129: 1600449792
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_13: 705375452
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_130: -1247072483
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_131: -1319547408
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_132: 1345935794
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_133: -146398807
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_134: -812906170
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_135: 1659903908
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_136: 1431102710
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_137: 1705866296
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_138: 1294191378
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_139: 1338368820
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_14: -1817248489
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_140: 1318448246
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_141: -2058810619
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_142: -1858516485
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_143: -380989310
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_144: -1155932035
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_145: -478655775
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_146: 1226011967
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_147: 1029484436
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_148: 1426678206
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_149: 1229222263
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_15: 689545872
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_150: -471647765
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_151: 1632831107
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_152: 915436242
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_153: -511474523
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_154: 1748408603
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_155: -984566375
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_156: -1026965237
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_157: 2068081290
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_158: 91851951
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_159: 1023618924
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_16: -1864782349
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_160: 409379058
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_161: 180503871
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_162: 1170491209
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_163: -335268867
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_164: -1985885360
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_165: -942951966
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_166: 66454202
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_167: 831544303
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_168: -728496091
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_169: 693952648
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_17: -1261591764
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_170: -1253441150
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_171: -242274548
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_172: 412495308
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_173: 1853729149
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_174: 1883085234
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_175: -1887759216
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_176: 1443076809
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_177: 161896439
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_178: -470118903
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_179: -1573278677
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_18: -1115332033
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_180: -325370837
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_181: 2075489657
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_182: 544846558
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_183: -1394508453
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_19: 1268494535
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_2: 1015208731
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_20: -147202458
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_21: -754894988
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_22: 1239333251
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_23: 1816391846
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_24: -985843925
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_25: 597106247
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_26: -653118804
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_27: 1592789970
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_28: 1485873645
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_29: -1518932841
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_3: 1268190572
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_30: 39801807
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_31: -593314392
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_32: -1677311880
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_33: 116400754
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_34: -1156392718
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_35: 1843756263
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_36: -254943644
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_37: -2145458441
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_38: -95226298
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_39: 1474034048
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_4: 1813137685
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_40: 573700858
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_41: -1776718489
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_42: -127928075
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_43: -313001208
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_44: -132903643
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_45: -2075589459
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_46: -1972169086
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_47: -1225954069
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_48: 1601181014
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_49: 1978554720
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_5: 929545787
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_50: -486428455
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_51: 755654647
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_52: 1064343674
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_53: -2126837153
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_54: -1456600712
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_55: 1716390302
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_56: -1788378441
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_57: 1884817878
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_58: -907013832
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_59: -1523262777
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_6: 615519031
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_60: -1914422295
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_61: 82423211
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_62: 943183948
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_63: 192823148
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_64: -1715146514
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_65: -1952605450
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_66: -584659321
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_67: 837074136
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_68: -796136414
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_69: 586244435
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_7: -82043562
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_70: -1130441204
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_71: -84512689
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_72: 606093697
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_73: -1950078804
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_74: 1628991107
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_75: -502489944
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_76: 1301587443
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_77: 603505656
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_78: 1650052331
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_79: 241345237
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_8: -480242271
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_80: -1601694293
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_81: 1195348828
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_82: 1718918762
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_83: 144748644
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_84: 1549029812
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_85: -988096529
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_86: 1564313930
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_87: 1860342712
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_88: 1403526929
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_89: -1135214611
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_9: 699844329
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_90: 1272814514
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_91: 1559428659
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_92: -1248570917
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_93: 328886089
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_94: -760440155
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_95: 299551559
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_96: -255632346
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_97: 299058051
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_98: 797123612
+      Arcade - Pretty Soldier Sailor Moon - Cat Burglar_99: -567001650
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
