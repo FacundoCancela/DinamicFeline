@@ -9,45 +9,33 @@ public class ABBHighScores : MonoBehaviour
     private ABB abb;
     private PointManager pointManager;
 
-    public class PlayerInfo
-    {
-        public string playerName;
-        public int playerScore;
-    }
+    private string nombreDelJugador;
 
     private void Start()
     {
         abb = new ABB();
         pointManager = PointManager.Instance;
+        nombreDelJugador = "NombreDelJugador";
 
+        // Obtener jugadores desde PointManager y agregarlos al ABB
+        Stack<int> scoreHistory = pointManager.GetScoreHistory();
+        foreach (int score in scoreHistory)
+        {
+            Jugador jugador = new Jugador(nombreDelJugador, score);
+            abb.AgregarJugador(jugador);
+        }
+
+        // Obtener jugadores ordenados desde el ABB
+        List<Jugador> jugadoresOrdenados = abb.ObtenerJugadoresEnOrden();
+
+        // Mostrar los jugadores ordenados
         string puntajesTexto = "";
-        List<PlayerInfo> jugadoresOrdenados = ObtenerJugadoresDesdePointManager();
-
         for (int i = 0; i < jugadoresOrdenados.Count; i++)
         {
-            puntajesTexto += (i + 1) + "° Lugar " + jugadoresOrdenados[i].playerName + " - Puntaje: " + jugadoresOrdenados[i].playerScore + "\n";
-            Debug.Log((i + 1) + "° Lugar " + jugadoresOrdenados[i].playerName + " - Puntaje: " + jugadoresOrdenados[i].playerScore);
+            puntajesTexto += (i + 1) + "° Lugar " + jugadoresOrdenados[i].Nombre + " - Puntaje: " + jugadoresOrdenados[i].Puntaje + "\n";
+            Debug.Log((i + 1) + "° Lugar " + jugadoresOrdenados[i].Nombre + " - Puntaje: " + jugadoresOrdenados[i].Puntaje);
         }
 
         highScore.text = puntajesTexto;
-    }
-
-    private List<PlayerInfo> ObtenerJugadoresDesdePointManager()
-    {
-        List<PlayerInfo> jugadoresOrdenados = new List<PlayerInfo>();
-        Stack<int> scoreHistory = pointManager.GetScoreHistory();
-
-        foreach (int score in scoreHistory)
-        {
-            PlayerInfo playerInfo = new PlayerInfo();
-            playerInfo.playerName = "NombreDelJugador"; 
-            playerInfo.playerScore = score;
-
-            jugadoresOrdenados.Add(playerInfo);
-        }
-
-        jugadoresOrdenados.Sort((a, b) => b.playerScore.CompareTo(a.playerScore));
-
-        return jugadoresOrdenados;
     }
 }
