@@ -65,6 +65,7 @@ public class CharacterStats : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Die();
             animator.SetTrigger("Death");
         }
         else
