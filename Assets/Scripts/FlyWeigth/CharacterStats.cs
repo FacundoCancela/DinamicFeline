@@ -24,7 +24,7 @@ public class CharacterStats : MonoBehaviour
     private void Start()
     {
         // Obtén la referencia al componente SpriteRenderer del hijo.
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         audioManager = GetComponent<AudioManager_Character>();
 

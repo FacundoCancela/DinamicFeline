@@ -51,10 +51,17 @@ public class PlayerController : MonoBehaviour
 
                 else if (Input.GetKeyDown(KeyCode.L))
                 {
-                  
-                   
-                        animator.SetTrigger("Shoot");
-                  
+
+                    GameObject pistol = GameObject.Find("Pistol(Clone)");
+                    if (pistol != null)
+                    {
+                        if (pistol.GetComponent<Pistol>().RemainingAmmo > 0 && pistol.GetComponent<Pistol>().CanFire)
+                        {
+
+                            animator.SetTrigger("Shoot");
+                        }
+                    }
+
 
                 }
             }
@@ -76,7 +83,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-    } 
+    }
 
     void Shoot()
     {
