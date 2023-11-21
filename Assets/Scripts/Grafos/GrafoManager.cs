@@ -13,30 +13,32 @@ public struct Aristas
     [SerializeField] public int peso;
 }
 
-[System.Serializable]
-public struct Nodos
-{
-    [SerializeField] public bool occupied;
-    [SerializeField] public GameObject gameObject;
-}
+
 
 public class GrafoManager : MonoBehaviour
 {
     GrafoMA grafo = new GrafoMA();
     [SerializeField] List<Aristas> aristas = new();
     [SerializeField] int cantVertices = 12;
-    [SerializeField] Nodos[] nodos;
+    [SerializeField] public nodos[] nodos;
+    public nodos[] camino;
+    int nextPos = 6;
     AlgDijkstra algDijkstra;
-    int i = 5;
 
 
-    private void Start()
+    private void Awake()
     {
-        nodos = new Nodos[cantVertices];
+        nodos = new nodos[cantVertices];
         grafo.InicializarGrafo();
+
         for (int i = 0; i < cantVertices; i++)
         {
-            grafo.AgregarVertice(i);
+            nodos[i] = GameObject.Find("Nodo" + i).GetComponent<nodos>();
+        }
+
+        for (int i = 0; i < cantVertices; i++)
+        {
+            grafo.AgregarVertice(nodos[i].IdNode);
         }
 
         foreach (var arista in aristas)
@@ -45,10 +47,6 @@ public class GrafoManager : MonoBehaviour
 
         }
 
-        for (int i = 0; i < cantVertices; i++)
-        {
-            nodos[i].gameObject = GameObject.Find("Nodo" + i);
-        }
 
     }
 
@@ -67,7 +65,7 @@ public class GrafoManager : MonoBehaviour
         return newPos;
     }
 
-    public Vector3 GetPosition(Vector3 vector, int nodo)
+    public Vector2 GetPosition(Vector2 vector, int nodo)
     {
 
         vector = nodos[nodo].gameObject.transform.position;
@@ -75,13 +73,14 @@ public class GrafoManager : MonoBehaviour
         return vector;
     }
 
-    public Vector3 PathFinding(Vector3 vector, int currentNode)
+    public nodos[] PathFinding( int currentNode)
     {
-        AlgDijkstra.Dijkstra(grafo, 0);
 
-        vector = GetPosition(vector, currentNode);
-        Debug.Log(AlgDijkstra.nodos[5]);
-        return vector;
+
+        camino = new nodos[cantVertices];
+        camino = AlgDijkstra.Dijkstra(grafo, currentNode, nodos, nextPos);;
+        
+        return camino;
     }
 
 }

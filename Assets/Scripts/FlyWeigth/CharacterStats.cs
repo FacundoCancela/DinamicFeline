@@ -17,6 +17,8 @@ public class CharacterStats : MonoBehaviour
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del hijo.
     private Color originalColor; // Almacena el color original del sprite.
 
+    EnemyMovement enemyMovement;
+
     Animator animator;
     AudioManager_Character audioManager;
     private void Start()
@@ -25,6 +27,8 @@ public class CharacterStats : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponent<Animator>();
         audioManager = GetComponent<AudioManager_Character>();
+
+        enemyMovement = GetComponent<EnemyMovement>();
 
         // Almacena el color original del sprite.
         if (spriteRenderer != null)
@@ -138,6 +142,7 @@ public class CharacterStats : MonoBehaviour
             Debug.Log(gameObject.name + " ha muerto.");
             PointManager.Instance.AddPoints(10);
             Destroy(gameObject);
+            enemyMovement.Death();
         }
     }
 

@@ -24,10 +24,16 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     public bool playerIsClose = false;
 
     GrafoManager grafo;
-    int currentNode = 0;
+    [SerializeField] int currentNode = 0;
+    int nextPos = 0;
     Vector3 newPosition;
     Vector3 direction;
     Animator anim;
+    [SerializeField] int UpdatePos;
+    nodos[] camino;
+    int availableNodes;
+
+    [SerializeField] LayerMask layers;
 
     #endregion
 
@@ -51,21 +57,31 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         {
             groundCollider = groundObject.GetComponent<Collider2D>();
         }
+
+        camino = new nodos[grafo.nodos.Length];
+
+        currentNode = 0;
+
+        camino = grafo.PathFinding(currentNode);
+        currentNode = camino[0].IdNode;
+        UpdatePos = currentNode;
+
+        foreach (var item in camino)
+        {
+            availableNodes++;
+        }
+
+        CalculatePath();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            currentNode = grafo.NextPosAvailable(currentNode);
 
-            newPosition = grafo.PathFinding(newPosition, currentNode);
+           
 
-            direction = newPosition - transform.position;
-        }
 
-        // Calcular la distancia entre el enemigo y el jugador.
-        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+            // Calcular la distancia entre el enemigo y el jugador.
+       float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
         // Si la distancia es igual o menor a 1 unidad, imprimir un mensaje de depuración.
         if (distanceToPlayer <= 3.5f)
@@ -77,17 +93,27 @@ public class EnemyMovement : MonoBehaviour, IMoveable
             playerIsClose = false;
         }
 
+        newPosition = grafo.GetPosition(newPosition, camino[currentNode].IdNode);
+        direction = newPosition - transform.position;
         // Movimiento horizontal y vertical hacia el jugador.
         Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
-        Vector2 movement = directionToPlayer * _movementSpeed * Time.deltaTime;
+        Vector2 movement = direction.normalized * _movementSpeed * Time.deltaTime;
 
         
 
         // Restringir el movimiento del enemigo dentro del suelo.
         if (!playerIsClose && !EnemyAttackController.IsAttacking)
         {
-            anim.SetBool("isWalking", true);
+       
             Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
+        }
+        else if (currentNode != 5)
+        {
+            Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
+        }
+        if(_movementSpeed != 0)
+        {
+            anim.SetBool("isWalking", true);
         }
         else
         {
@@ -104,7 +130,22 @@ public class EnemyMovement : MonoBehaviour, IMoveable
             Flip();
         }
 
-        transform.position += direction.normalized * _movementSpeed * Time.deltaTime;
+
+        if (direction.x > 0 && !isFacingRight)
+        {
+            Flip();
+        }
+        else if (direction.x < 0 && isFacingRight)
+        {
+            Flip();
+        }
+
+
+
+
+
+
+        // transform.position += direction.normalized * _movementSpeed * Time.deltaTime;
     }
 
     #endregion
@@ -118,7 +159,6 @@ public class EnemyMovement : MonoBehaviour, IMoveable
 
         // Restringir el movimiento del enemigo en X dentro del suelo.
         newPosition.x = Mathf.Clamp(newPosition.x, minX + enemyCollider.bounds.extents.x, maxX - enemyCollider.bounds.extents.x);
-
         // Aplicar la nueva posición.
         transform.position = newPosition;
     }
@@ -142,23 +182,98 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         transform.localScale = scale;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    #region Triggers
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 6)
         {
-            _movementSpeed = 0;
+            if (collision.gameObject.GetComponent<nodos>() != null)
+            {
+                if (collision.gameObject.GetComponent<nodos>().IdNode == currentNode)
+                {
+                    anim.SetBool("isWalking", false);
+                    _movementSpeed = 0;
+                    if (camino[currentNode].IdNode <= 4)
+                    {
+                        if (!camino[currentNode + 1].occupied)
+                        {
+                            CalculatePath();
+                            _movementSpeed = 2.5f;
+                        }
+                    }
+                }
+            }
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 6)
         {
-            _movementSpeed = 2;
-            direction = newPosition - transform.position;
+            if (collision.gameObject.GetComponent<nodos>() != null)
+            {
+                if (collision.gameObject.GetComponent<nodos>().IdNode == currentNode)
+                {
+                    if (camino[currentNode].IdNode <= 4)
+                    {
+                        if (!camino[currentNode + 1].occupied)
+                        {
+                            CalculatePath();
+                            _movementSpeed = 2.5f;
+                        }
+                    }
+
+                    else
+                    {
+                        _movementSpeed = 2.5f;
+                    }
+                }
+            }
+        }
+    }
+    #endregion
+
+    private nodos[] CalculateDijkstra(nodos [] nodos)
+    {
+        nodos = grafo.PathFinding(currentNode);
+
+        return nodos;
+    }
+
+
+    private void CalculatePath()
+    {
+        if (UpdatePos != availableNodes - 1)
+        {
+           
+            UpdatePos++;
+            if (!grafo.nodos[UpdatePos].occupied)
+            {
+                grafo.nodos[currentNode].occupied = false;
+                nextPos = camino[UpdatePos].IdNode;
+
+                newPosition = grafo.GetPosition(newPosition, camino[nextPos].IdNode);
+
+
+                currentNode = camino[nextPos].IdNode;
+
+
+                direction = newPosition - transform.position;
+                grafo.nodos[currentNode].occupied = true;
+                Debug.Log(grafo.nodos[currentNode].occupied);
+            }
+
+            if(UpdatePos >= 5)
+            {
+                UpdatePos = 0;
+            }
         }
     }
 
+    public void Death()
+    {
+        grafo.nodos[currentNode].occupied = false;
+    }
 
     #endregion
 }
