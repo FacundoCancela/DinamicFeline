@@ -9,11 +9,14 @@ public class GrafoMA : GrafoTDA
     public int[,] MAdy;
     public int[] Etiqs;
     public int cantNodos;
+    public GameObject[] Nodes;
     public void InicializarGrafo()
     {
         MAdy = new int[n, n];
         Etiqs = new int[n];
         cantNodos = 0;
+        Nodes = new GameObject[n];
+
     }
 
     public void AgregarVertice(int v)

@@ -6,7 +6,7 @@ using UnityEngine;
 public class AlgDijkstra
 {
     public static int[] distance;
-    public static string[] nodos;
+    public static nodos[] nodes;
 
     private static int MinimumDistance(int[] distance, bool[] shortestPathTreeSet, int verticesCount)
     {
@@ -28,8 +28,11 @@ public class AlgDijkstra
         return minIndex;
     }
 
-    public static void Dijkstra(GrafoMA grafo, int source)
+    public static nodos[] Dijkstra(GrafoMA grafo, int source, nodos[] Nodos, int objective)
     {
+
+
+
         // obtengo la matriz de adyacencia del TDA_Grafo
         int[,] graph = grafo.MAdy;
 
@@ -39,9 +42,11 @@ public class AlgDijkstra
         // obtengo el indice del nodo elegido como origen a partir de su valor
         source = grafo.Vert2Indice(source);
 
+   
         // vector donde se van a guardar los resultados de las distancias entre 
         // el origen y cada vertice del grafo
         distance = new int[verticesCount];
+
 
         bool[] shortestPathTreeSet = new bool[verticesCount];
 
@@ -65,7 +70,6 @@ public class AlgDijkstra
         // la distancia al nodo origen es 0
         distance[source] = 0;
         nodos1[source] = nodos2[source] = grafo.Etiqs[source];
-
         // recorro todos los nodos (vertices)
         for (int count = 0; count < verticesCount - 1; ++count)
         {
@@ -83,45 +87,55 @@ public class AlgDijkstra
                     // guardo los nodos para reconstruir el camino
                     nodos1[v] = grafo.Etiqs[u];
                     nodos2[v] = grafo.Etiqs[v];
+
+             
                 }
             }
         }
 
-        // construyo camino de nodos
-        nodos = new string[verticesCount];
-        int nodOrig = grafo.Etiqs[source];
-        for (int i = 0; i < verticesCount; i++)
-        {
+        nodes = new nodos[verticesCount];
+     // construyo camino de nodos
+    
+       int nodOrig = grafo.Etiqs[source];
+       for (int i = 0; i < objective; i++)
+         {
             if (nodos1[i] != -1)
-            {
+             {
                 List<int> l1 = new List<int>();
                 l1.Add(nodos1[i]);
                 l1.Add(nodos2[i]);
                 while (l1[0] != nodOrig)
-                {
+                  {
                     for (int j = 0; j < verticesCount; j++)
-                    {
-                        if (j != source && l1[0] == nodos2[j])
-                        {
-                            l1.Insert(0, nodos1[j]);
-                            break;
+                     {
+                       if (j != source && l1[0] == nodos2[j])
+                         {
+                           l1.Insert(0, nodos1[j]);
+                           break;
+                                }
+                            }
                         }
-                    }
-                }
                 for (int j = 0; j < l1.Count; j++)
-                {
+                     {
+
                     if (j == 0)
-                    {
-                        nodos[i] = l1[j].ToString();
+                        {
+                          nodes[j] = Nodos[source];
+
+
+                        }
+                        else
+                         {
+                             nodes[j] = Nodos[l1[j]];
+
+                          }
+                      }
                     }
-                    else
-                    {
-                        nodos[i] += "," + l1[j].ToString();
-                    }
-                }
-            }
+                 }
+
+        return nodes;
         }
+        
     }
 
 
-}

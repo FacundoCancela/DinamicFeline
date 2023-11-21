@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60285084}
   - component: {fileID: 60285085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (9)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196697800}
   - component: {fileID: 196697801}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (1)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,6 +832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425909861}
   - component: {fileID: 425909862}
+  - component: {fileID: 425909863}
   m_Layer: 6
   m_Name: Nodo1
   m_TagString: Untagged
@@ -847,7 +848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425909860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.301, y: 0, z: 0}
+  m_LocalPosition: {x: 2.301, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -864,10 +865,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.11196413, y: 0.0484367}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -878,8 +879,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.1909851, y: 0.20563754}
   m_EdgeRadius: 0
+--- !u!114 &425909863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425909860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 1
 --- !u!1 &461587578
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461587579}
   - component: {fileID: 461587580}
+  - component: {fileID: 461587581}
   m_Layer: 6
   m_Name: Nodo2
   m_TagString: Untagged
@@ -905,7 +921,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461587578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.997, y: -0.696, z: 0}
+  m_LocalPosition: {x: 1.997, y: -0.696, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -922,10 +938,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.2198493, y: 0.10656077}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -936,8 +952,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25321004, y: 0.2831363}
   m_EdgeRadius: 0
+--- !u!114 &461587581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461587578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 2
 --- !u!1 &506847551
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506847552}
   - component: {fileID: 506847553}
+  - component: {fileID: 506847554}
   m_Layer: 6
   m_Name: Nodo4
   m_TagString: Untagged
@@ -963,7 +994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506847551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.249, y: 0.116, z: 0}
+  m_LocalPosition: {x: 1.74, y: 0.2, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -980,10 +1011,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.3419878, y: -0.014530983}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -994,8 +1025,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.31602442, y: 0.2734486}
   m_EdgeRadius: 0
+--- !u!114 &506847554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506847551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 537658892}
   - component: {fileID: 537658893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1339,7 +1384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595170242}
   - component: {fileID: 595170243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (4)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,6 +1468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686811247}
   - component: {fileID: 686811248}
+  - component: {fileID: 686811249}
   m_Layer: 6
   m_Name: Nodo0
   m_TagString: Untagged
@@ -1438,7 +1484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686811246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.344, y: -0.393, z: 0}
+  m_LocalPosition: {x: 1.407, y: -0.67, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1455,10 +1501,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.007160276, y: 0.033380605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1469,8 +1515,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.216797, y: 0.19386365}
   m_EdgeRadius: 0
+--- !u!114 &686811249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686811246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 0
 --- !u!1 &745302941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887727356}
   - component: {fileID: 887727357}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (8)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2257,6 +2317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951540373}
   - component: {fileID: 951540374}
+  - component: {fileID: 951540375}
   m_Layer: 6
   m_Name: Nodo5
   m_TagString: Untagged
@@ -2272,7 +2333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951540372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.551, y: -0.232, z: 0}
+  m_LocalPosition: {x: 0.352, y: 0.143, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2289,10 +2350,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.115159065, y: 0.05328042}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2303,8 +2364,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.30904526, y: 0.38969702}
   m_EdgeRadius: 0
+--- !u!114 &951540375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951540372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 5
 --- !u!1001 &990540173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,7 +2637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257019564}
   - component: {fileID: 1257019565}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (3)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2722,6 +2797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312169806}
   - component: {fileID: 1312169807}
+  - component: {fileID: 1312169808}
   m_Layer: 6
   m_Name: Nodo3
   m_TagString: Untagged
@@ -2737,7 +2813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312169805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.944, y: -0.634, z: 0}
+  m_LocalPosition: {x: -0.96, y: 0.03, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2754,10 +2830,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.34547758, y: -0.36327553}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2768,8 +2844,53 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.30904484, y: 0.27344894}
   m_EdgeRadius: 0
+--- !u!114 &1312169808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312169805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3863d4925cad39544ae85e7d221b52dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  IdNode: 3
+--- !u!1 &1349144564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1349144565}
+  m_Layer: 0
+  m_Name: Nodo 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1349144565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349144564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6537545, y: 1.285042, z: -0.6971602}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360202764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,7 +3057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523460640}
   - component: {fileID: 1523460641}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (5)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3351,7 +3472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689334763}
   - component: {fileID: 1689334764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3440,7 +3561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726061921}
   - component: {fileID: 1726061922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (6)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3628,7 +3749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1944273911}
   - component: {fileID: 1944273912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Fondo nivel 1 - Callej\xF3n - Provicional (7)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3743,15 +3864,16 @@ MonoBehaviour:
     peso: 1
   - origen: 3
     destino: 4
-    peso: 1
+    peso: 10
   - origen: 4
     destino: 5
     peso: 1
   - origen: 5
-    destino: 4
-    peso: 1
+    destino: 1
+    peso: 15
   cantVertices: 6
   nodos: []
+  camino: []
 --- !u!4 &1986677733
 Transform:
   m_ObjectHideFlags: 0

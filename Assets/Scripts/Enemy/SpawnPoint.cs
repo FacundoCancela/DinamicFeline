@@ -10,7 +10,7 @@ public class SpawnPoint : MonoBehaviour
 
     private List<string> enemyTypes = new List<string> { "Enemy1", "Enemy2", "Enemy3"}; // Tipos de enemigos
     private List<string> generatedEnemies = new List<string>(); // Almacena los tipos de enemigos generados en orden
-    public int maxEnemies = 5; // Número total de enemigos a generar
+    public int maxEnemies = 1; // Número total de enemigos a generar
 
     void Start()
     {
