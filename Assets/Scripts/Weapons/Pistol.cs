@@ -9,12 +9,13 @@ public class Pistol : MonoBehaviour, IShooteable
     public Transform WeaponTransform;
     public GameObject BulletPrefab;
     public WeaponManager weaponManager;
-
+    Animator animator;
     AudioSource audio;
 
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        animator = GetComponentInParent<Animator>();
     }
 
     private void Update()
@@ -39,13 +40,18 @@ public class Pistol : MonoBehaviour, IShooteable
         if (CanFire && RemainingAmmo > 0)
         {
             audio.Play();
-
             if (BulletPrefab != null && WeaponTransform != null)
             {
                 this.transform.rotation = Quaternion.Euler(0, 0, 0);
                 Instantiate(BulletPrefab, WeaponTransform.position, WeaponTransform.rotation);
                 RemainingAmmo--;
             }
+
         }
+    }
+
+    public void Bullet()
+    {
+
     }
 }

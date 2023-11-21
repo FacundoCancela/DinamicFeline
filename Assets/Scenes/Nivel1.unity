@@ -4354,11 +4354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1940708724010242356, guid: ec03ba40c8031d94b9137094643a734b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.07
+      value: 2.93
       objectReference: {fileID: 0}
     - target: {fileID: 1940708724010242356, guid: ec03ba40c8031d94b9137094643a734b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.52
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1940708724010242363, guid: ec03ba40c8031d94b9137094643a734b, type: 3}
       propertyPath: weaponContainer
