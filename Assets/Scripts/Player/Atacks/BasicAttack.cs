@@ -39,7 +39,7 @@ public class BasicAttack : IAttackStrategy
             // Calcular la nueva posición del brazo con interpolación lineal.
             float progress = timer / (attackDuration / 2);
 
-            Vector3 targetPosition = isFacingRight ? initialArmPosition + new Vector3(1f, 0, 0) : initialArmPosition + new Vector3(-1f, 0, 0);
+            Vector3 targetPosition = isFacingRight ? initialArmPosition + new Vector3(3f, 0, 0) : initialArmPosition + new Vector3(-3f, 0, 0);
             armTransform.position = Vector3.Lerp(initialArmPosition, targetPosition, progress);
 
             // Actualizar el temporizador.
@@ -58,7 +58,7 @@ public class BasicAttack : IAttackStrategy
             float progress = timer / (attackDuration / 2);
 
             Vector3 targetPosition = initialArmPosition;
-            armTransform.position = Vector3.Lerp(isFacingRight ? initialArmPosition + new Vector3(1f, 0, 0) : initialArmPosition + new Vector3(-1f, 0, 0), targetPosition, progress);
+            armTransform.position = Vector3.Lerp(isFacingRight ? initialArmPosition + new Vector3(3f, 0, 0) : initialArmPosition + new Vector3(-3f, 0, 0), targetPosition, progress);
 
 
             // Actualizar el temporizador.

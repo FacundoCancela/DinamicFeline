@@ -19,6 +19,7 @@ public class TimeTravelManager : MonoBehaviour
 
     private void Update()
     {
+        timeTravelCooldown -= Time.deltaTime;
         // Si se presiona la tecla T, activar la función de viaje en el tiempo.
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -31,7 +32,7 @@ public class TimeTravelManager : MonoBehaviour
         // Verificar si hay suficientes instantáneas en la cola de eventos para retroceder 4 segundos.
         int snapshotsToSkip = Mathf.RoundToInt(timeTravelCooldown);
 
-        if (eventQueue.Count >= snapshotsToSkip)
+        if (timeTravelCooldown <= 0)
         {
             // Retroceder 4 segundos.
             for (int i = 0; i < snapshotsToSkip - 1; i++)
@@ -50,6 +51,8 @@ public class TimeTravelManager : MonoBehaviour
 
             // Vaciar la lista de instantáneas después de usar el viaje en el tiempo.
             eventQueue.Clear();
+
+            timeTravelCooldown = 4f;
         }
         else
         {

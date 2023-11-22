@@ -84,8 +84,9 @@ public class EnemyMovement : MonoBehaviour, IMoveable
        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
         // Si la distancia es igual o menor a 1 unidad, imprimir un mensaje de depuración.
-        if (distanceToPlayer <= 3.5f)
+        if (distanceToPlayer <= 2.8f)
         {
+            anim.SetBool("isWalking", false);
             playerIsClose = true;
         }
         else
@@ -105,11 +106,11 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         if (!playerIsClose && !EnemyAttackController.IsAttacking)
         {
        
-            Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
+            Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
         }
         else if (currentNode != 5)
         {
-            Move(movement, groundCollider.bounds.min.x, groundCollider.bounds.max.x);
+            Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
         }
         if(_movementSpeed != 0)
         {
@@ -141,24 +142,23 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         }
 
 
-
-
-
-
-        // transform.position += direction.normalized * _movementSpeed * Time.deltaTime;
+        if (playerIsClose && currentNode == 5)
+        {
+            anim.SetBool("isWalking", false);
+        }
     }
 
     #endregion
 
     #region IMOVEABLE_METHODS
 
-    public void Move(Vector2 direction, float minX, float maxX)
+    public void Move(Vector2 direction, float minY, float maxY)
     {
         // Calcular la nueva posición del enemigo.
         Vector3 newPosition = transform.position + (Vector3)direction;
 
         // Restringir el movimiento del enemigo en X dentro del suelo.
-        newPosition.x = Mathf.Clamp(newPosition.x, minX + enemyCollider.bounds.extents.x, maxX - enemyCollider.bounds.extents.x);
+        newPosition.y = Mathf.Clamp(newPosition.y, minY - enemyCollider.bounds.extents.y, maxY + enemyCollider.bounds.extents.y);
         // Aplicar la nueva posición.
         transform.position = newPosition;
     }
@@ -210,6 +210,7 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     {
         if (collision.gameObject.layer == 6)
         {
+            _movementSpeed = 2.5f;
             if (collision.gameObject.GetComponent<nodos>() != null)
             {
                 if (collision.gameObject.GetComponent<nodos>().IdNode == currentNode)
@@ -270,6 +271,11 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         }
     }
 
+
+    public void Attack()
+    {
+        GetComponentInChildren<BasicEnemyAttackController>().PerformAttack();
+    }
     public void Death()
     {
         grafo.nodos[currentNode].occupied = false;

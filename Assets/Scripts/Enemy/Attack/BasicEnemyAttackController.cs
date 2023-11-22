@@ -70,8 +70,8 @@ public class BasicEnemyAttackController : MonoBehaviour
         if (!isAttacking && canAttack && currentAttackStrategy != null)
         {
             audiomanager.AS_basicAttack.Play();
-            anim.SetTrigger("attack");
             StartCoroutine(AttackCoroutine());
+
         }
     }
 
@@ -118,9 +118,9 @@ public class BasicEnemyAttackController : MonoBehaviour
             // Si el jugador está cerca y el temporizador ha alcanzado el intervalo, realiza un ataque.
             if (attackTimer >= attackInterval)
             {
-
-                PerformAttack();
                 canAttack = false; // Desactivar la posibilidad de atacar nuevamente.
+                anim.SetTrigger("attack");
+                
             }
         }
 
