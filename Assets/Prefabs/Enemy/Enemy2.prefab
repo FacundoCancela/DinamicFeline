@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428702860805659389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1871, y: 0.247, z: -0.20000002}
+  m_LocalPosition: {x: 0.01, y: 0.247, z: -0.20000002}
   m_LocalScale: {x: 0.3742, y: 0.25881982, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -189,8 +189,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428702861402150579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 4, z: 2}
+  m_LocalPosition: {x: -0.003, y: 0.02, z: 0}
+  m_LocalScale: {x: 0.49123755, y: 1.0378615, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428702861921480606}
@@ -238,7 +238,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.49803925, g: 0.49803925, b: 0.49803925, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -313,6 +313,11 @@ MonoBehaviour:
   enemyType: {fileID: 11400000, guid: ca4f5adf00f6ff740be3944466c6afc7, type: 2}
   isFacingRight: 1
   playerIsClose: 0
+  currentNode: 0
+  UpdatePos: 0
+  layers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &428702861921480603
 MonoBehaviour:
   m_ObjectHideFlags: 0

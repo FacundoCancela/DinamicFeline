@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public bool haveAWeapon = false;
 
     Animator animator;
-
+    [SerializeField] float attackCooldown = 0;
     AudioManager_Character audioManager;
 
 
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        attackCooldown -= Time.deltaTime;
         if (!haveAWeapon)
         {
             // Cambiar la estrategia de ataque según la tecla presionada, solo si no estamos bloqueando.
@@ -34,19 +35,28 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.O))
                 {
-                    audioManager.AS_basicAttack.Play();
-                    animator.SetTrigger("Punch");
-                    
-                    // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
-                    basicAttackCommand.Execute();
-                    
+                    if (attackCooldown <= 0)
+                    {
+                        audioManager.AS_basicAttack.Play();
+                        animator.SetTrigger("Punch");
+
+                        // Ejecuta el comando de ataque básico cuando se presiona la tecla O.
+                        basicAttackCommand.Execute();
+                        attackCooldown = 0.4f;
+                    }
 
                 }
                 else if (Input.GetKeyDown(KeyCode.I))
                 {
-                    audioManager.AS_specialAttack.Play();
-                    // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
-                    specialAttackCommand.Execute();
+                    //audioManager.AS_specialAttack.Play();
+                    if (attackCooldown <= 0)
+                    {
+                        animator.SetTrigger("SpecialAttack");
+                        // Ejecuta el comando de ataque especial cuando se presiona la tecla I.
+                        specialAttackCommand.Execute();
+                        attackCooldown = 0.4f;
+                    }
+
                 }
 
                 else if (Input.GetKeyDown(KeyCode.L))
