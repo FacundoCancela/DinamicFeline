@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public AttackController attackController;
@@ -10,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackCooldown = 0;
     AudioManager_Character audioManager;
 
-
+    public TextMeshProUGUI ammoDisplay;
     private ICommand basicAttackCommand;
     private ICommand specialAttackCommand;
 
@@ -19,7 +21,7 @@ public class PlayerController : MonoBehaviour
         // Inicializa los comandos concretos.
         basicAttackCommand = new BasicAttackCommand(attackController);
         specialAttackCommand = new SpecialAttackCommand(attackController);
-
+        ammoDisplay.text = "0";
         animator = GetComponent<Animator>();
         audioManager = GetComponentInChildren<AudioManager_Character>();
 
@@ -65,10 +67,12 @@ public class PlayerController : MonoBehaviour
                     GameObject pistol = GameObject.Find("Pistol(Clone)");
                     if (pistol != null)
                     {
+                        ammoDisplay.text = pistol.GetComponent<Pistol>().RemainingAmmo.ToString();
                         if (pistol.GetComponent<Pistol>().RemainingAmmo > 0 && pistol.GetComponent<Pistol>().CanFire)
                         {
 
                             animator.SetTrigger("Shoot");
+                            
                         }
                     }
 

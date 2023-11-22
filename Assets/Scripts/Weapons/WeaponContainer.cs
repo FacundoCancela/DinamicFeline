@@ -20,10 +20,12 @@ public class WeaponContainer : MonoBehaviour
         {
             weaponManager.playerHaveWeapon = true;
 
+
             if (currentWeapon != null)
             {
                 // Instanciar el arma en la mano del jugador.
                 Instantiate(currentWeapon as MonoBehaviour, playerHand.position, playerHand.rotation, playerHand);
+                collision.GetComponent<PlayerController>().ammoDisplay.text = "10";
             }
 
             Destroy(gameObject);

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class Pistol : MonoBehaviour, IShooteable
 {
     public bool CanFire { get; set; } = true;
@@ -11,7 +12,7 @@ public class Pistol : MonoBehaviour, IShooteable
     public WeaponManager weaponManager;
     Animator animator;
     AudioSource audio;
-
+    public TextMeshProUGUI ammoDisplay;
     void Start()
     {
         audio = GetComponent<AudioSource>();
@@ -45,6 +46,9 @@ public class Pistol : MonoBehaviour, IShooteable
                 this.transform.rotation = Quaternion.Euler(0, 0, 0);
                 Instantiate(BulletPrefab, WeaponTransform.position, WeaponTransform.rotation);
                 RemainingAmmo--;
+
+                GetComponentInParent<PlayerController>().ammoDisplay.text = RemainingAmmo.ToString();
+
             }
 
         }
