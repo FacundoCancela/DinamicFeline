@@ -23,6 +23,17 @@ public class PlayerMovement : MonoBehaviour, IMoveable
     private float cameraHalfWidth;
     public bool isFacingRight = true; // Indica si el personaje está mirando hacia la derecha.
 
+    private float Gravedad;
+    private float YPos;
+    private float YposPiso;
+    public bool InGround;
+    public bool Saltando;
+    public int Fases;
+    public float AlturaSalto;
+    public float PotenciaSalto;
+    public float Fallen;
+    private int sky;
+
     #endregion
 
     #region UNITY_EVENTS
@@ -35,7 +46,7 @@ public class PlayerMovement : MonoBehaviour, IMoveable
         // Calcular el ancho medio de la cámara en unidades del mundo.
         cameraHalfWidth = mainCamera.orthographicSize * ((float)Screen.width / Screen.height);
 
- 
+
         animator = GetComponent<Animator>();
 
         _movementSpeed = stats.speed;
@@ -71,6 +82,14 @@ public class PlayerMovement : MonoBehaviour, IMoveable
             // Aplicar movimiento al jugador con restricciones en X.
             Move(movement, minX, maxX);
         }
+
+        DetectorDePiso();
+        Jump();
+    }
+
+    void FixedUpdate()
+    {
+        transform.Translate(Vector3.up * Gravedad * Time.deltaTime);
     }
 
     #endregion
@@ -106,7 +125,93 @@ public class PlayerMovement : MonoBehaviour, IMoveable
         transform.position = newPosition;
 
 
+    } 
+
+    public void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !Saltando && InGround)
+        {
+            YposPiso = transform.position.y;
+            Saltando = true; 
+            InGround = false;
+        }
+
+        if (Saltando)
+        {
+            switch(Fases)
+            {
+                case 0:
+                    Gravedad = AlturaSalto;
+                    Fases = 1;
+
+                    break;
+
+                case 1:
+                    if (Gravedad > 0)
+                    {
+                        Gravedad -= PotenciaSalto * Time.deltaTime;
+                    }
+                    else Fases = 2;
+
+                    break;
+            }
+        }
+
     }
+
+    void SetTransformY(float n)
+    {
+        transform.position = new Vector3(transform.position.x, n, transform.position.z);
+    }
+
+    public void DetectorDePiso()
+    {
+        if(!Saltando)
+        {
+            sky = 0;
+
+            if(YPos == YposPiso)
+            {
+                InGround = true;
+            }
+        }
+
+        if(InGround)
+        {
+            Gravedad = 0;
+            Fases = 0;
+        }
+        else
+        {
+            switch(Fases)
+            {
+                case 2:
+                    Gravedad = 0;
+                    Fases = 3;
+                    break;
+
+                case 3:
+                    if(YPos >= YposPiso)
+                    {
+                        if(Gravedad > -10)
+                        {
+                            Gravedad -= AlturaSalto / Fallen * Time.deltaTime;
+                        }
+                    }
+                    else 
+                    {
+                        Saltando = false;
+                        InGround = true;
+                        SetTransformY(YposPiso);
+                        Fases = 0;
+                    }
+                    break;
+            }
+        }
+
+        YPos = transform.position.y;
+    }
+
 
     private void Flip()
     {
