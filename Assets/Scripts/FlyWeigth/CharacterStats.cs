@@ -9,25 +9,35 @@ public class CharacterStats : MonoBehaviour
     private List<IPlayerDeathObserver> playerDeathObservers = new List<IPlayerDeathObserver>();
     public Slider slider;
 
+    Collider2D cols;
+
     public int CurrentHealth => currentHealth;
     private int currentHealth; // La salud actual del personaje.
     private int damage;
     private float speed;
+    [SerializeField] private string onEnemyDeath;
 
     private SpriteRenderer spriteRenderer; // Referencia al componente SpriteRenderer del hijo.
     private Color originalColor; // Almacena el color original del sprite.
 
     EnemyMovement enemyMovement;
 
+    EventsManager eventManager => EventsManager.Instance;
+
     Animator animator;
     AudioManager_Character audioManager;
+
+    private void Awake()
+    {
+        eventManager.RegisterEvent(onEnemyDeath);
+    }
     private void Start()
     {
         // Obtén la referencia al componente SpriteRenderer del hijo.
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         audioManager = GetComponent<AudioManager_Character>();
-
+        cols = GetComponent<BoxCollider2D>();
         enemyMovement = GetComponent<EnemyMovement>();
 
         // Almacena el color original del sprite.
@@ -58,24 +68,38 @@ public class CharacterStats : MonoBehaviour
     {
 
         audioManager.AS_hurt.Play();
-        currentHealth -= damageAmount;
-        if(slider) slider.value = currentHealth;
-
-        animator.SetTrigger("Damaged");
-
-        if (currentHealth <= 0)
+        if (gameObject.GetComponent<BasicEnemyAttackController>())
         {
-            Die();
-            animator.SetTrigger("Death");
+            gameObject.GetComponent<BasicEnemyAttackController>().SetAttack();
+        }
+        if (gameObject.GetComponent<PlayerController>() != null && gameObject.GetComponent<PlayerController>().isBlocking)
+        {
+
+            damageAmount = 0;
+
+
         }
         else
         {
-            // Cambiar temporalmente el color del sprite a rojo.
-            StartCoroutine(FlashSpriteColor(Color.red, 0.2f)); // Cambia el color a rojo durante 0.2 segundos.
-        }
+            currentHealth -= damageAmount;
+            if (slider) slider.value = currentHealth;
 
-        // Mostrar la vida actual del personaje en el Debug.Log.
-        Debug.Log(gameObject.name + " Vida Actual: " + currentHealth);
+            animator.SetTrigger("Damaged");
+
+            if (currentHealth <= 0)
+            {
+                Die();
+                animator.SetTrigger("Death");
+            }
+            else
+            {
+                // Cambiar temporalmente el color del sprite a rojo.
+                StartCoroutine(FlashSpriteColor(Color.red, 0.2f)); // Cambia el color a rojo durante 0.2 segundos.
+            }
+
+            // Mostrar la vida actual del personaje en el Debug.Log.
+            Debug.Log(gameObject.name + " Vida Actual: " + currentHealth);
+        }
     }
 
     // Corutina para destellar el color del sprite.
@@ -140,13 +164,22 @@ public class CharacterStats : MonoBehaviour
         }
         else
         {
-            Debug.Log(gameObject.name + " ha muerto.");
-            PointManager.Instance.AddPoints(10);
-            Destroy(gameObject);
-            enemyMovement.Death();
+            Destroy(cols);
+
+            gameObject.GetComponent<EnemyMovement>().Death();
+            animator.SetTrigger("Death");
+            eventManager.DispatchEvents(onEnemyDeath);
         }
     }
 
+    public void DestroyObject()
+    {
+   
+        Debug.Log(gameObject.name + " ha muerto.");
+        PointManager.Instance.AddPoints(10);
+        Destroy(gameObject);
+        enemyMovement.Death();
+    }
     void SetHealthBar()
     {
         if (!gameObject.CompareTag("Player"))
