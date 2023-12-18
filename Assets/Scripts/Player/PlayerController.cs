@@ -86,12 +86,14 @@ public class PlayerController : MonoBehaviour
                 if (!blockController.IsBlocking)
                 {
                     // Cambiar a la estrategia de defensa básica (bloqueo).
+                    animator.SetBool("isBlocking", true);
                     blockController.SetDefenseStrategy(new BasicDefense());
                     blockController.PerformBlock();
                 }
                 else
                 {
                     // Liberar el bloqueo (desbloquear).
+                    animator.SetBool("isBlocking", false);
                     blockController.ReleaseBlock();
                 }
             }

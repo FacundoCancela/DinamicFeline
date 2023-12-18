@@ -134,6 +134,7 @@ public class PlayerMovement : MonoBehaviour, IMoveable
             YposPiso = transform.position.y;
             Saltando = true; 
             InGround = false;
+            animator.SetTrigger("Jump");
         }
 
         if (Saltando)
