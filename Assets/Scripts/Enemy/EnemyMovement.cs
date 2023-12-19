@@ -105,12 +105,13 @@ public class EnemyMovement : MonoBehaviour, IMoveable
         // Restringir el movimiento del enemigo dentro del suelo.
         if (!playerIsClose && !EnemyAttackController.IsAttacking)
         {
-       
-            Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
+            if(enemyCollider != null)
+                Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
         }
         else if (currentNode != 5)
         {
-            Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
+            if (enemyCollider != null)
+                Move(movement, groundCollider.bounds.min.y, groundCollider.bounds.max.y);
         }
         if(_movementSpeed != 0)
         {
