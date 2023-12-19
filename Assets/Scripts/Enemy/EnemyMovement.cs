@@ -279,6 +279,7 @@ public class EnemyMovement : MonoBehaviour, IMoveable
     public void Death()
     {
         grafo.nodos[currentNode].occupied = false;
+        playerIsClose = false;
     }
 
     #endregion

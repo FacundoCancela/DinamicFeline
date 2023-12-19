@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3623460834828222672, guid: 85ccf45859348614e8855487db9d501b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5213
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 3623460834828222672, guid: 85ccf45859348614e8855487db9d501b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9802
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3623460834828222672, guid: 85ccf45859348614e8855487db9d501b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -84,6 +84,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
       value: 0
       objectReference: {fileID: 0}
@@ -100,6 +108,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169735766705779385, guid: 85ccf45859348614e8855487db9d501b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.28
       objectReference: {fileID: 0}
@@ -109,3 +125,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+--- !u!1 &1762926925105927501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3518355823601142050, guid: 85ccf45859348614e8855487db9d501b, type: 3}
+  m_PrefabInstance: {fileID: 2928634199407942767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1200327362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762926925105927501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6919b05c05bda44a3142ded904105f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpName: 
+  damageBonus: 2
+--- !u!114 &1200327363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762926925105927501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006364a7a2e9a944e9dd0b85c80eb31d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpPrefab: {fileID: 1200327362}

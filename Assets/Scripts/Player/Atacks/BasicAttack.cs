@@ -4,7 +4,7 @@ using UnityEngine;
 public class BasicAttack : IAttackStrategy
 {
     private int damage = 10; // Daño del golpe básico.
-    private float attackDuration = 0.3f; // Duración total del ataque en segundos (ida y vuelta).
+    private float attackDuration = 0.5f; // Duración total del ataque en segundos (ida y vuelta).
     private bool isAttacking = false; // Variable para rastrear si se está realizando un ataque.
     private bool isFacingRight = true;
 
@@ -58,7 +58,7 @@ public class BasicAttack : IAttackStrategy
             float progress = timer / (attackDuration / 2);
 
             Vector3 targetPosition = initialArmPosition;
-            armTransform.position = Vector3.Lerp(isFacingRight ? initialArmPosition + new Vector3(3f, 0, 0) : initialArmPosition + new Vector3(-3f, 0, 0), targetPosition, progress);
+            armTransform.position = Vector3.Lerp(isFacingRight ? initialArmPosition + new Vector3(4f, 0, 0) : initialArmPosition + new Vector3(-4f, 0, 0), targetPosition, progress);
 
 
             // Actualizar el temporizador.

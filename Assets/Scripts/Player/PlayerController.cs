@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public BlockController blockController;
     public WeaponManager weaponManager;
     public bool haveAWeapon = false;
-
+    public bool isBlocking = false;
     Animator animator;
     [SerializeField] float attackCooldown = 0;
     AudioManager_Character audioManager;
@@ -89,12 +89,14 @@ public class PlayerController : MonoBehaviour
                     animator.SetBool("isBlocking", true);
                     blockController.SetDefenseStrategy(new BasicDefense());
                     blockController.PerformBlock();
+                    isBlocking = true;
                 }
                 else
                 {
                     // Liberar el bloqueo (desbloquear).
                     animator.SetBool("isBlocking", false);
                     blockController.ReleaseBlock();
+                    isBlocking = false;
                 }
             }
         }

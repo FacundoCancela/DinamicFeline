@@ -130,4 +130,10 @@ public class BasicEnemyAttackController : MonoBehaviour
             canAttack = true;
         }
     }
+
+
+    public void SetAttack()
+    {
+        canAttack = false;
+    }
 }
