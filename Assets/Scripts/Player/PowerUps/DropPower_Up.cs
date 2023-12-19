@@ -45,6 +45,7 @@ public class DropPower_Up : MonoBehaviour, Ilistener
     public void OnEventDispatch()
     {
         killsCounter++;
+        Debug.Log("Kills:" + killsCounter);
         if (killsCounter >= neededKills)
         {
             var i = Random.Range(0, powerUps.Count);
@@ -55,7 +56,7 @@ public class DropPower_Up : MonoBehaviour, Ilistener
             pos += Vector3.up * 10;
             Quaternion rot = transform.rotation;
             Instantiate(powerUp, pos, rot);
-            powerUp.GetComponent<PowerUp>().getObjectivePosition(nodos[objectiveNode].gameObject.transform.position);
+            //powerUp.GetComponent<PowerUp>().getObjectivePosition(nodos[objectiveNode].gameObject.transform.position);
             killsCounter = 0;
         }
 

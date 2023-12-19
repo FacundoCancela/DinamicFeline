@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428702860805659389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.021, y: 0.01, z: -0.20000002}
+  m_LocalPosition: {x: -0.215, y: 0.01, z: -0.20000002}
   m_LocalScale: {x: 2, y: 0.6010679, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -259,6 +259,11 @@ MonoBehaviour:
   enemyType: {fileID: 11400000, guid: 6f67ed7a55f9a5c4da128e790b67e818, type: 2}
   isFacingRight: 1
   playerIsClose: 0
+  currentNode: 0
+  UpdatePos: 0
+  layers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &428702861921480603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: ad23e6413be45f440bed1d3ec3795df1, type: 2}
   slider: {fileID: 0}
+  onEnemyDeath: 
 --- !u!61 &428702861921480604
 BoxCollider2D:
   m_ObjectHideFlags: 0
