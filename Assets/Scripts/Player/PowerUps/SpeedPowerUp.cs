@@ -4,7 +4,7 @@ public class SpeedPowerUp : PowerUp
     public float speedBonus = 2f;
     private float _movementSpeed = 3;
     Vector3 nodoPos;
-    DropPower_Up dropPower_Up;
+
     private void Update()
     {
       
@@ -18,6 +18,6 @@ public class SpeedPowerUp : PowerUp
 
     public override void getObjectivePosition(Vector3 position)
     {
-        nodoPos = position;
+
     }
 }

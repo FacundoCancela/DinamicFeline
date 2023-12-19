@@ -94,6 +94,12 @@ MonoBehaviour:
   attackController: {fileID: 1940708723048221996}
   stats: {fileID: 11400000, guid: ff91c2dc1fbbdd14b9b8a20aa6b393ae, type: 2}
   isFacingRight: 1
+  InGround: 0
+  Saltando: 0
+  Fases: 0
+  AlturaSalto: 0
+  PotenciaSalto: 0
+  Fallen: 0
 --- !u!114 &1940708722739676403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +116,9 @@ MonoBehaviour:
   blockController: {fileID: 1940708723048222003}
   weaponManager: {fileID: 1940708724010242363}
   haveAWeapon: 0
+  isBlocking: 0
+  attackCooldown: 0
+  ammoDisplay: {fileID: 0}
 --- !u!114 &1940708722739676407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: ff91c2dc1fbbdd14b9b8a20aa6b393ae, type: 2}
   slider: {fileID: 0}
+  onEnemyDeath: 
 --- !u!114 &1940708722739676406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940708723048221999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.421, y: 0.473, z: -0.20000002}
+  m_LocalPosition: {x: -0.358, y: 0.473, z: -0.20000002}
   m_LocalScale: {x: 0.2116, y: 0.12424073, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
